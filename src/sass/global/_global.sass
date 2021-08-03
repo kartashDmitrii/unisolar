@@ -1,0 +1,26 @@
+html
+  scroll-behavior: smooth
+  overflow-x: hidden
+body
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  //font-family: "Proxima Nova"
+  overflow: hidden
+  &.hidden
+    max-height: 100vh
+    overflow: hidden
+  &.center
+    min-height: 100vh
+    main
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+  *
+    -webkit-tap-highlight-color: transparent
+  main
+    flex: 1
+img
+  width: 100%
+  height: auto

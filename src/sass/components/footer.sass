@@ -1,0 +1,132 @@
+footer
+  display: grid
+  grid-template-areas: 'logo links contacts' 'copyright links contacts'
+  grid-template-columns: 270px 1fr 1fr
+  margin-bottom: 20px
+  @media (max-width: 767px)
+    grid-template-areas: 'logo links' 'contacts contacts' 'copyright copyright'
+    grid-template-columns: 1fr 1fr
+  @media (max-width: 480px)
+    grid-template-areas: 'logo' 'links' 'contacts' 'copyright'
+    grid-template-columns: 1fr
+  .logo
+    grid-area: logo
+    width: 152px
+    height: 156px
+    margin-bottom: 26px
+  .links
+    grid-area: links
+    display: flex
+    justify-content: center
+    &-wrapper
+      max-width: 290px
+      display: flex
+      flex-direction: column
+      @media (max-width: 480px)
+        max-width: none
+        width: 100%
+      .name
+        font-weight: 700
+        font-size: 16px
+        line-height: 123%
+        color: #000
+        padding-bottom: 10px
+        margin-bottom: 20px
+        position: relative
+        align-self: flex-start
+        &:after
+          content: ''
+          width: 100%
+          height: 3px
+          position: absolute
+          bottom: 0
+          left: 0
+          background: #04a7ec
+      ul
+        padding: 0
+        margin: 0
+        list-style: none
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 90px
+        grid-row-gap: 10px
+        @media (max-width: 1024px)
+          grid-column-gap: 50px
+          margin-right: 40px
+        @media (max-width: 480px)
+          justify-content: space-between
+        li
+          font-size: 16px
+          line-height: 123%
+          color: #000
+          a
+            color: inherit
+            text-decoration: inherit
+  .contacts
+    display: flex
+    flex-direction: column
+    grid-area: contacts
+    font-size: 16px
+    line-height: 123%
+    color: #000
+    @media (max-width: 480px)
+      margin-bottom: 15px
+    .name
+      font-weight: 700
+      font-size: 16px
+      line-height: 123%
+      color: #000
+      padding-bottom: 10px
+      margin-bottom: 20px
+      position: relative
+      align-self: flex-start
+      &:after
+        content: ''
+        width: 100%
+        height: 3px
+        position: absolute
+        bottom: 0
+        left: 0
+        background: #04a7ec
+    .address
+      margin: 0 0 10px
+    .phones
+      display: flex
+      flex-direction: column
+      margin-bottom: 15px
+      a
+        color: inherit
+        text-decoration: inherit
+        margin: 0 0 5px
+        &:last-child
+          margin-bottom: 0
+    .email
+      color: inherit
+      text-decoration: inherit
+      margin: 0 0 10px
+    .social
+      display: flex
+      align-items: center
+      a
+        width: 18px
+        height: 18px
+        margin-right: 10px
+        &:last-child
+          margin-right: 0
+        &.instagram
+          background: url("../img/svg/instagram.svg") center center / 100% 100% no-repeat
+        &.facebook
+          background: url("../img/svg/facebook.svg") center center / 100% 100% no-repeat
+  .copyright
+    grid-area: copyright
+    display: flex
+    flex-direction: column
+    p
+      font-size: 16px
+      line-height: 123%
+      color: #000
+      margin: 0 0 20px
+    span
+      font-size: 14px
+      line-height: 123%
+      color: #9c9c9c
