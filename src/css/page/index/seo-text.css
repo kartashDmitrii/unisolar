@@ -1,0 +1,66 @@
+section.seo-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.seo-text {
+      margin-bottom: 60px; } }
+  section.seo-text .section-title .title {
+    margin-bottom: 0; }
+  section.seo-text .section-title:before {
+    margin: auto;
+    bottom: 0; }
+  section.seo-text .text {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 100%;
+    max-height: 175px;
+    padding-right: 110px;
+    box-sizing: border-box; }
+    @media (max-width: 1024px) {
+      section.seo-text .text {
+        max-height: 250px; } }
+    @media (max-width: 767px) {
+      section.seo-text .text {
+        padding-right: 40px; } }
+    @media (max-width: 680px) {
+      section.seo-text .text {
+        max-height: 320px; } }
+    section.seo-text .text::-webkit-scrollbar {
+      width: 3px; }
+    section.seo-text .text::-webkit-scrollbar-track {
+      background: #f1f1f1; }
+    section.seo-text .text::-webkit-scrollbar-thumb {
+      background: #0667B1; }
+    section.seo-text .text > * {
+      margin: 0 0 15px; }
+      section.seo-text .text > *:last-child {
+        margin-bottom: 0; }
+    section.seo-text .text p {
+      font-size: 19px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: #333; }
+  section.seo-text .text-wrapper {
+    position: relative; }
+    section.seo-text .text-wrapper.no-scroll:after {
+      content: none; }
+    section.seo-text .text-wrapper.no-scroll .text {
+      overflow: visible; }
+    section.seo-text .text-wrapper.no-fade:after {
+      height: 0; }
+    section.seo-text .text-wrapper:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 175px;
+      width: calc(100% - 110px);
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 80%);
+      transition: height .3s;
+      user-select: none;
+      pointer-events: none; }
+      @media (max-width: 767px) {
+        section.seo-text .text-wrapper:after {
+          width: calc(100% - 40px); } }

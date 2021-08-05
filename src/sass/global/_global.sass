@@ -5,7 +5,7 @@ body
   min-height: 100vh
   display: flex
   flex-direction: column
-  //font-family: "Proxima Nova"
+  font-family: "Proxima Nova"
   overflow: hidden
   &.hidden
     max-height: 100vh
@@ -24,3 +24,42 @@ body
 img
   width: 100%
   height: auto
+
+.section-title
+  margin-left: 112px
+  display: flex
+  flex-direction: column
+  position: relative
+  padding-left: 46px
+  margin-bottom: 40px
+  @media (max-width: 767px)
+    margin-left: 0
+  @media (max-width: 576px)
+    padding-left: 23px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 2px
+    height: 20px
+    background: #0667b1
+  .title
+    font-family: "Druk Wide Cyr"
+    font-weight: 500
+    font-size: 27px
+    line-height: 150%
+    letter-spacing: -0.02em
+    text-transform: uppercase
+    color: #333
+    margin: 0 0 40px
+    @media (max-width: 576px)
+      font-size: 18px
+      margin-bottom: 20px
+  .desc
+    font-size: 16px
+    line-height: 150%
+    letter-spacing: -0.02em
+    color: #8d8d8d
+    margin: 0
+    max-width: 310px

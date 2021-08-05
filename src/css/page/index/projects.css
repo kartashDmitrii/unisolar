@@ -1,0 +1,128 @@
+section.projects {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.projects {
+      margin-bottom: 60px; } }
+  section.projects .filters {
+    margin-left: 160px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px; }
+    @media (max-width: 1365px) {
+      section.projects .filters {
+        margin-left: 120px; } }
+    @media (max-width: 1024px) {
+      section.projects .filters {
+        margin-left: 60px; } }
+    @media (max-width: 767px) {
+      section.projects .filters {
+        margin-left: 0;
+        flex-wrap: wrap; } }
+    section.projects .filters .filter {
+      padding: 8px 16px;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: #333;
+      border: 1px solid #8D8D8D;
+      box-sizing: border-box;
+      border-radius: 61px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      text-decoration: none; }
+      @media (max-width: 767px) {
+        section.projects .filters .filter {
+          padding: 6px 12px;
+          font-size: 15px; } }
+      @media (max-width: 480px) {
+        section.projects .filters .filter {
+          padding: 4px 8px; } }
+      section.projects .filters .filter.active {
+        color: #ffffff;
+        background: #0667B1;
+        border-color: #0667B1; }
+      section.projects .filters .filter:last-child {
+        margin-right: 0; }
+  section.projects .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 40px;
+    margin-bottom: 48px; }
+    @media (max-width: 1365px) {
+      section.projects .grid {
+        grid-column-gap: 30px; } }
+    @media (max-width: 1200px) {
+      section.projects .grid {
+        grid-template-columns: 1fr 1fr 1fr; } }
+    @media (max-width: 767px) {
+      section.projects .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px; } }
+    @media (max-width: 480px) {
+      section.projects .grid {
+        grid-template-columns: 1fr; } }
+    section.projects .grid .elem {
+      display: flex;
+      flex-direction: column; }
+      section.projects .grid .elem .image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+        border-radius: 7px; }
+        @media (max-width: 767px) {
+          section.projects .grid .elem .image {
+            margin-bottom: 8px; } }
+        section.projects .grid .elem .image img {
+          border-radius: 7px; }
+      section.projects .grid .elem .info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px; }
+        @media (max-width: 767px) {
+          section.projects .grid .elem .info {
+            margin-bottom: 8px; } }
+        section.projects .grid .elem .info a {
+          font-size: 16px;
+          line-height: 150%;
+          letter-spacing: -0.02em;
+          text-decoration: underline;
+          color: #8d8d8d;
+          margin-right: 16px; }
+          @media (max-width: 767px) {
+            section.projects .grid .elem .info a {
+              font-size: 14px; } }
+          section.projects .grid .elem .info a:last-child {
+            margin-right: 0; }
+      section.projects .grid .elem .name {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: -.02em;
+        color: #333;
+        margin: 0;
+        text-decoration: none; }
+        @media (max-width: 767px) {
+          section.projects .grid .elem .name {
+            font-size: 15px; } }
+  section.projects .link {
+    display: flex;
+    justify-content: center; }
+    section.projects .link a {
+      width: 238px;
+      height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0667B1;
+      border-radius: 70px;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      text-decoration: none; }

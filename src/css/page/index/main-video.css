@@ -1,0 +1,78 @@
+section.main-video {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.main-video {
+      margin-bottom: 60px; } }
+  section.main-video .container {
+    max-width: 1360px;
+    padding: 0;
+    position: relative; }
+    @media (max-width: 1390px) {
+      section.main-video .container {
+        width: calc(100% - 30px);
+        margin: 0 15px; } }
+    section.main-video .container video {
+      width: 100%;
+      height: auto;
+      border-radius: 7px;
+      cursor: pointer; }
+    section.main-video .container .preview {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 0 104px;
+      box-sizing: border-box;
+      border-radius: 7px;
+      cursor: pointer; }
+      @media (max-width: 980px) {
+        section.main-video .container .preview {
+          padding: 0;
+          justify-content: center; } }
+      section.main-video .container .preview.hide {
+        opacity: 0;
+        user-select: none;
+        pointer-events: none; }
+      section.main-video .container .preview .play-btn {
+        width: 136px;
+        height: 136px;
+        margin: 0 0 40px;
+        background: url("../img/svg/play-btn.svg") center center/100% 100% no-repeat; }
+        @media (max-width: 980px) {
+          section.main-video .container .preview .play-btn {
+            width: 84px;
+            height: 84px; } }
+        @media (max-width: 576px) {
+          section.main-video .container .preview .play-btn {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 20px; } }
+      section.main-video .container .preview .text {
+        max-width: 550px;
+        width: 100%;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        text-align: center;
+        margin: 0;
+        padding: 0 15px;
+        box-sizing: border-box; }
+        @media (max-width: 980px) {
+          section.main-video .container .preview .text {
+            font-size: 18px; } }
+        @media (max-width: 576px) {
+          section.main-video .container .preview .text {
+            font-size: 16px; } }
+        @media (max-width: 360px) {
+          section.main-video .container .preview .text {
+            font-size: 14px; } }
