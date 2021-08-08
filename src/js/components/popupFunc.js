@@ -79,6 +79,7 @@ export default class popupFunc {
                 document.querySelector('.popup-wrapper').classList.add('active');
             }
         } else {
+            console.log(this.popup)
             this.popup.classList.add('active');
             if (this.popup.parentNode.classList.contains('wrapper') && this.wrapper) {
                 this.popup.parentNode.classList.add('active');

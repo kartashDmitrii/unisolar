@@ -63,3 +63,32 @@ img
     color: #8d8d8d
     margin: 0
     max-width: 310px
+
+.popup-wrapper
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  z-index: 10
+  background: rgba(51, 51, 51, 0.6)
+  justify-content: center
+  &.active
+    display: flex
+  .popup
+    position: fixed
+    z-index: 11
+    display: none
+    max-height: 100vh
+    overflow-y: scroll
+    &::-webkit-scrollbar
+      width: 2px
+    &::-webkit-scrollbar-track
+      background: transparent
+    &::-webkit-scrollbar-thumb
+      background: #888
+    &.center
+      align-self: center
+    &.active
+      display: flex

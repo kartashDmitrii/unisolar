@@ -1,0 +1,58 @@
+section.top-block
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+  position: relative
+  top: -97px
+  padding-top: 122px
+  height: 343px
+  box-sizing: border-box
+  margin-bottom: 56px
+  @media (max-width: 980px)
+    top: -82px
+  @media (max-width: 767px)
+    top: -57px
+  .breadcrumbs
+    margin: 0 0 50px
+    ul
+      margin: 0
+      padding: 0
+      list-style: none
+      display: flex
+      align-items: center
+      li
+        font-size: 16px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #ffffff
+        padding: 0 36px 0 0
+        margin: 0
+        position: relative
+        &:after
+          content: ''
+          width: 4px
+          height: 4px
+          border-radius: 50%
+          background: #ffffff
+          opacity: .4
+          position: absolute
+          top: 0
+          bottom: 0
+          right: 16px
+          margin: auto
+        &:last-child
+          &:after
+            content: none
+        a
+          color: inherit
+          text-decoration: inherit
+        span
+          opacity: .4
+  .title
+    margin: 0
+    font-family: "Druk Wide Cyr"
+    font-size: 41px
+    line-height: 110%
+    letter-spacing: -0.02em
+    color: #fff
+    text-transform: uppercase

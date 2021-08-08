@@ -5,14 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>UnitTest</title>
+    <title>unisolar</title>
     <link rel="stylesheet" href="css/lib.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="container">
     <div class="left-side">
-        <div class="burger">
+        <div class="burger" data-popup="header-menu-popup">
             <img src="img/svg/burger.svg" alt="">
         </div>
         <a href="/" class="logo">
@@ -31,9 +31,9 @@
         <div class="phone">
             <a href="tel:0442064506">(044) 206-45-06</a>
         </div>
-        <button class="consultation">Консультація</button>
+        <button class="consultation" data-popup="form-popup">Консультація</button>
         <div class="language">
-            <button>Ru</button>
+            <a href="#">Ru</a>
         </div>
     </div>
 </header>
@@ -672,6 +672,65 @@
         </div>
     </div>
 </footer>
+    <div class="popup-wrapper close">
+        <div class="header-menu-popup popup">
+    <div class="container">
+        <div class="top-menu">
+            <div class="left-side">
+                <div class="close"></div>
+                <div class="logo">
+                    <img src="img/logo-colored.png" alt="">
+                </div>
+            </div>
+            <div class="right-side">
+                <a href="tel:+380442064506" class="phone">(044) 206-45-06</a>
+                <div class="buttons">
+                    <button class="consultation" data-popup="form-popup">Консультація</button>
+                    <div class="language">
+                        <a href="#">Ru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <p class="name">Меню</p>
+            <ul>
+                <li><a href="#">Проєкти</a></li>
+                <li><a href="#">Про компанiю</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Для дилерів</a></li>
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+        <div class="form-popup popup center">
+    <div class="close"></div>
+    <p class="title">Форма зворотного дзвінка</p>
+    <p class="text">Заповніть форму нижче, ми передзвонимо протягом дня</p>
+    <form class="form">
+        <label>
+            <span>Iм'я*</span>
+            <input type="text" placeholder="Андрій Іванович">
+        </label>
+        <label>
+            <span>Email*</span>
+            <input type="email" placeholder="example@mailserv.com">
+        </label>
+        <label>
+            <span>Телефон*</span>
+            <input type="tel" placeholder="+38 (099) 123 11 88">
+        </label>
+        <div class="submit-btn">
+            <button class="submit">Вiдправити</button>
+        </div>
+    </form>
+    <p class="info">Натискаючи на кнопку, ви погоджуєтеся
+        на обробку персональних даних</p>
+</div>
+    </div>
 <script src="js/lib.min.js"></script>
 <script src="js/main-min.js"></script>
 </body>

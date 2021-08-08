@@ -134,3 +134,9 @@ if (document.querySelector('section.seo-text')){
         textWrapper.classList[currPos < 20 ? 'add' : 'remove']('no-fade')
     })
 }
+if (document.querySelector('[data-popup]')){
+
+    document.querySelectorAll('[data-popup]').forEach( elem =>{
+        new popupFunc(elem, document.querySelector(`.popup.${elem.dataset.popup}`))
+    })
+}
