@@ -1,10 +1,18 @@
 section.blog-grid {
+  margin-top: 56px;
   margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.blog-grid {
+      margin-top: 20px;
+      margin-bottom: 60px; } }
   section.blog-grid .filters {
     display: flex;
     align-items: center;
     margin-bottom: 48px;
     flex-wrap: wrap; }
+    @media (max-width: 767px) {
+      section.blog-grid .filters {
+        margin-bottom: 20px; } }
     section.blog-grid .filters .filter {
       padding: 8px 16px;
       font-weight: 600;
@@ -95,8 +103,20 @@ section.blog-grid {
       list-style: none;
       display: flex;
       align-items: center; }
+      @media (max-width: 767px) {
+        section.blog-grid .pagination ul {
+          margin: 0 8px; } }
+      @media (max-width: 576px) {
+        section.blog-grid .pagination ul {
+          margin: 0 18px; } }
       section.blog-grid .pagination ul li {
         margin-right: 8px; }
+        @media (max-width: 767px) {
+          section.blog-grid .pagination ul li {
+            margin-right: 4px; } }
+        @media (max-width: 576px) {
+          section.blog-grid .pagination ul li {
+            margin-right: 18px; } }
         section.blog-grid .pagination ul li:last-child {
           margin-right: 0; }
         section.blog-grid .pagination ul li.active a {
@@ -105,6 +125,9 @@ section.blog-grid {
         section.blog-grid .pagination ul li.last {
           margin-left: 20px;
           position: relative; }
+          @media (max-width: 576px) {
+            section.blog-grid .pagination ul li.last {
+              margin-left: 12px; } }
           section.blog-grid .pagination ul li.last:before {
             content: '...';
             position: absolute;
@@ -134,6 +157,15 @@ section.blog-grid {
           letter-spacing: -0.02em;
           color: #333;
           text-decoration: inherit; }
+          @media (max-width: 767px) {
+            section.blog-grid .pagination ul li a {
+              width: 48px;
+              height: 48px; } }
+          @media (max-width: 576px) {
+            section.blog-grid .pagination ul li a {
+              border: none;
+              width: auto;
+              height: auto; } }
     section.blog-grid .pagination .back, section.blog-grid .pagination .next {
       padding: 15px 16px;
       font-weight: 600;
@@ -147,6 +179,14 @@ section.blog-grid {
       border-radius: 61px;
       position: relative;
       text-decoration: none; }
+      @media (max-width: 767px) {
+        section.blog-grid .pagination .back, section.blog-grid .pagination .next {
+          padding: 12px; } }
+      @media (max-width: 576px) {
+        section.blog-grid .pagination .back, section.blog-grid .pagination .next {
+          font-size: 12px;
+          border: none;
+          padding: 0; } }
       section.blog-grid .pagination .back:after, section.blog-grid .pagination .next:after {
         content: '';
         width: 7px;
@@ -158,10 +198,22 @@ section.blog-grid {
         background: url("../img/svg/arrow-next.svg") center center/100% 100% no-repeat; }
     section.blog-grid .pagination .back {
       padding-left: 37px; }
+      @media (max-width: 576px) {
+        section.blog-grid .pagination .back {
+          padding-left: 18px; } }
       section.blog-grid .pagination .back:after {
         left: 16px;
         transform: rotate(180deg); }
+        @media (max-width: 576px) {
+          section.blog-grid .pagination .back:after {
+            left: 5px; } }
     section.blog-grid .pagination .next {
       padding-right: 37px; }
+      @media (max-width: 576px) {
+        section.blog-grid .pagination .next {
+          padding-right: 18px; } }
       section.blog-grid .pagination .next:after {
         right: 16px; }
+        @media (max-width: 576px) {
+          section.blog-grid .pagination .next:after {
+            right: 5px; } }

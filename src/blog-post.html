@@ -12,10 +12,11 @@
 <body>
 @@include('./html-components/header.html')
 <main>
-    @@include('./html-components/global/top-block.html',{
-        "title": "Блог"
+    @@include('./html-components/global/top-block.html', {
+        "title": "Як обрати обладнання для сонячної електростанції"
     })
-    @@include('./html-components/blog/blog-grid.html')
+    @@include('./html-components/blog-post/blog-post.html')
+    @@include('./html-components/blog-post/may-interest.html')
     @@include('./html-components/global/newsletter.html')
 </main>
 @@include('./html-components/footer.html')

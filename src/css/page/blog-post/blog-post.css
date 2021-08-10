@@ -1,0 +1,129 @@
+section.blog-post {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.blog-post {
+      margin-bottom: 60px; } }
+  section.blog-post .info-block {
+    background: #F3F3F3;
+    padding: 27px 0;
+    margin-bottom: 48px; }
+    @media (max-width: 576px) {
+      section.blog-post .info-block {
+        padding: 16px 0; } }
+    section.blog-post .info-block .container {
+      display: flex;
+      align-items: center; }
+      @media (max-width: 576px) {
+        section.blog-post .info-block .container {
+          flex-direction: column;
+          align-items: flex-start; } }
+      section.blog-post .info-block .container .date {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #8d8d8d;
+        margin: 0 32px 0 0; }
+        @media (max-width: 576px) {
+          section.blog-post .info-block .container .date {
+            margin: 0 0 16px; } }
+      section.blog-post .info-block .container .tags ul {
+        padding: 0;
+        margin: -5px 0 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap; }
+        section.blog-post .info-block .container .tags ul li {
+          margin-top: 5px;
+          margin-right: 8px; }
+          section.blog-post .info-block .container .tags ul li:last-child {
+            margin-right: 0; }
+        section.blog-post .info-block .container .tags ul a {
+          display: block;
+          padding: 8px 16px;
+          background: #8D8D8D;
+          border-radius: 61px;
+          text-decoration: inherit;
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 150%;
+          color: #ffffff; }
+          @media (max-width: 576px) {
+            section.blog-post .info-block .container .tags ul a {
+              padding: 4px 8px;
+              font-size: 14px; } }
+  section.blog-post .post {
+    display: flex;
+    flex-direction: column; }
+    section.blog-post .post .image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 56px; }
+    section.blog-post .post .text {
+      display: flex;
+      flex-direction: column;
+      max-width: 954px;
+      margin: 0 auto; }
+      section.blog-post .post .text * {
+        margin: 0 0 24px; }
+        @media (max-width: 767px) {
+          section.blog-post .post .text * {
+            margin-bottom: 21px; } }
+      section.blog-post .post .text > *:last-child {
+        margin-bottom: 0; }
+      section.blog-post .post .text p {
+        font-size: 21px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #333; }
+        @media (max-width: 767px) {
+          section.blog-post .post .text p {
+            font-size: 18px; } }
+      section.blog-post .post .text b {
+        font-size: 21px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #333;
+        font-weight: 600; }
+        @media (max-width: 767px) {
+          section.blog-post .post .text b {
+            font-size: 18px; } }
+      section.blog-post .post .text .big-text {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 130%;
+        letter-spacing: -0.02em;
+        color: #333;
+        margin: 32px 0 56px; }
+        @media (max-width: 767px) {
+          section.blog-post .post .text .big-text {
+            font-size: 26px;
+            margin: 14px 0 21px; } }
+      section.blog-post .post .text ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        list-style: none; }
+        section.blog-post .post .text ul li {
+          position: relative;
+          padding-left: 20px;
+          font-size: 21px;
+          line-height: 150%;
+          letter-spacing: -0.02em;
+          color: #333; }
+          @media (max-width: 767px) {
+            section.blog-post .post .text ul li {
+              font-size: 18px; } }
+          section.blog-post .post .text ul li:after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            left: 0;
+            top: 12px;
+            background: #0667B1;
+            border-radius: 50%; }
+          section.blog-post .post .text ul li a {
+            color: inherit; }

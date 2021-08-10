@@ -5,11 +5,21 @@
   display: flex
   flex-direction: column
   margin-bottom: 136px
+  @media (max-width: 1365px)
+    padding: 41px 80px 40px
+  @media (max-width: 900px)
+    padding: 20px 40px
+  @media (max-width: 767px)
+    margin-bottom: 60px
+    padding: 20px 15px
   .top-block
     display: flex
     align-items: flex-start
     justify-content: space-between
     margin-bottom: 72px
+    @media (max-width: 767px)
+      flex-direction: column
+      margin-bottom: 40px
     .title
       font-family: "Druk Wide Cyr"
       font-weight: 500
@@ -21,6 +31,8 @@
       margin: 0
       padding-left: 46px
       position: relative
+      @media (max-width: 576px)
+        padding-left: 24px
       &:before
         content: ''
         width: 2px
@@ -43,10 +55,21 @@
     align-items: center
     padding-bottom: 16px
     border-bottom: 2px solid rgba(255,255,255,.3)
+    @media (max-width: 767px)
+      flex-direction: column
+      border: none
+      padding-bottom: 0
     label
       display: flex
       align-items: center
       flex: 1
+      @media (max-width: 767px)
+        padding-bottom: 16px
+        border-bottom: 2px solid rgba(255,255,255,.3)
+      @media (max-width: 576px)
+        flex-direction: column
+        width: 100%
+        align-items: flex-start
       span
         border: none
         outline: none
@@ -59,6 +82,14 @@
         color: rgba(255,255,255,.3)
         position: relative
         padding-right: 21px
+        @media (max-width: 1365px)
+          font-size: 18px
+        @media (max-width: 900px)
+          font-size: 16px
+        @media (max-width: 767px)
+          font-size: 12px
+        @media (max-width: 576px)
+          margin-bottom: 15px
         &:after
           content: ''
           width: 3px
@@ -69,6 +100,8 @@
           bottom: 0
           margin: auto
           background: #ffffff
+          @media (max-width: 576px)
+            content: none
       input
         margin: 0 18px
         font-size: 16px
@@ -79,6 +112,8 @@
         outline: none
         background: transparent
         flex: 1
+        @media (max-width: 576px)
+          margin: 0
     .subscribe
       width: 175px
       height: 52px
@@ -96,3 +131,6 @@
       color: #ffffff
       background: transparent
       cursor: pointer
+      @media (max-width: 767px)
+        margin-top: 15px
+        align-self: flex-end

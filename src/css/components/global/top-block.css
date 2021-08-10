@@ -5,15 +5,17 @@ section.top-block {
   position: relative;
   top: -97px;
   padding-top: 122px;
-  height: 343px;
+  min-height: 343px;
   box-sizing: border-box;
-  margin-bottom: 56px; }
+  margin-bottom: -97px; }
   @media (max-width: 980px) {
     section.top-block {
-      top: -82px; } }
+      top: -82px;
+      margin-bottom: -82px; } }
   @media (max-width: 767px) {
     section.top-block {
-      top: -57px; } }
+      top: -57px;
+      margin-bottom: -57px; } }
   section.top-block .breadcrumbs {
     margin: 0 0 50px; }
     section.top-block .breadcrumbs ul {
@@ -21,7 +23,8 @@ section.top-block {
       padding: 0;
       list-style: none;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      flex-wrap: wrap; }
       section.top-block .breadcrumbs ul li {
         font-size: 16px;
         line-height: 150%;
@@ -30,6 +33,10 @@ section.top-block {
         padding: 0 36px 0 0;
         margin: 0;
         position: relative; }
+        @media (max-width: 767px) {
+          section.top-block .breadcrumbs ul li {
+            font-size: 14px;
+            padding-right: 21px; } }
         section.top-block .breadcrumbs ul li:after {
           content: '';
           width: 4px;
@@ -42,8 +49,13 @@ section.top-block {
           bottom: 0;
           right: 16px;
           margin: auto; }
-        section.top-block .breadcrumbs ul li:last-child:after {
-          content: none; }
+          @media (max-width: 767px) {
+            section.top-block .breadcrumbs ul li:after {
+              right: 8px; } }
+        section.top-block .breadcrumbs ul li:last-child {
+          padding-right: 0; }
+          section.top-block .breadcrumbs ul li:last-child:after {
+            content: none; }
         section.top-block .breadcrumbs ul li a {
           color: inherit;
           text-decoration: inherit; }
@@ -51,9 +63,19 @@ section.top-block {
           opacity: .4; }
   section.top-block .title {
     margin: 0;
+    padding: 0 0 57px;
     font-family: "Druk Wide Cyr";
     font-size: 41px;
     line-height: 110%;
     letter-spacing: -0.02em;
     color: #fff;
     text-transform: uppercase; }
+    @media (max-width: 1024px) {
+      section.top-block .title {
+        font-size: 36px; } }
+    @media (max-width: 767px) {
+      section.top-block .title {
+        font-size: 28px; } }
+    @media (max-width: 576px) {
+      section.top-block .title {
+        font-size: 21px; } }
