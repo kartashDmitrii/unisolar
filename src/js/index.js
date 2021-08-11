@@ -140,3 +140,43 @@ if (document.querySelector('[data-popup]')){
         new popupFunc(elem, document.querySelector(`.popup.${elem.dataset.popup}`))
     })
 }
+
+if (document.querySelector('section.project-images')){
+    let allImagesSlider = new Swiper('section.project-images .all-images', {
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 3,
+                slidesPerScroll: 3,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 3.5,
+                slidesPerScroll: 3,
+                spaceBetween: 10,
+            },
+            1001: {
+                spaceBetween: 20,
+                slidesPerView: 5,
+                slidesPerScroll: 5,
+            },
+            1366: {
+                spaceBetween: 40,
+                slidesPerView: 5.75,
+                slidesPerScroll: 5,
+            }
+        }
+    });
+    let mainImageSlider = new Swiper('section.project-images .main-image', {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: 'section.project-images .main-image .next',
+            prevEl: 'section.project-images .main-image .prev',
+        },
+        thumbs: {
+            swiper: allImagesSlider
+        }
+    })
+}
