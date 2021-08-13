@@ -1,0 +1,142 @@
+section.contacts {
+  display: flex;
+  align-items: center;
+  margin-top: 48px;
+  margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.contacts {
+      flex-direction: column-reverse;
+      margin-bottom: 60px; } }
+  section.contacts .info {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 893px);
+    margin-right: 30px; }
+    @media (max-width: 1365px) {
+      section.contacts .info {
+        width: calc(100% - 550px); } }
+    @media (max-width: 860px) {
+      section.contacts .info {
+        width: calc(100% - 500px);
+        margin-right: 20px; } }
+    @media (max-width: 767px) {
+      section.contacts .info {
+        width: 100%;
+        margin-right: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        align-items: flex-start; } }
+    @media (max-width: 480px) {
+      section.contacts .info {
+        grid-template-columns: 1fr;
+        grid-gap: 15px; } }
+    section.contacts .info .contact {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24px; }
+      @media (max-width: 767px) {
+        section.contacts .info .contact {
+          margin-bottom: 0; } }
+      section.contacts .info .contact a {
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #333;
+        margin: 0;
+        display: block;
+        text-decoration: none; }
+        @media (max-width: 860px) {
+          section.contacts .info .contact a {
+            font-size: 21px; } }
+    section.contacts .info .text {
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: #8d8d8d;
+      margin: 0 0 24px; }
+    section.contacts .info .social {
+      display: flex;
+      align-items: center;
+      margin: 0 0 48px; }
+      @media (max-width: 767px) {
+        section.contacts .info .social {
+          margin-bottom: 0; } }
+      section.contacts .info .social a {
+        width: 34px;
+        height: 34px;
+        margin-right: 18px; }
+        @media (max-width: 860px) {
+          section.contacts .info .social a {
+            width: 28px;
+            height: 28px; } }
+        section.contacts .info .social a:last-child {
+          margin-right: 0; }
+        section.contacts .info .social a.whatsapp {
+          background: url("../img/svg/WhatsApp-blue.svg") center center/100% 100% no-repeat; }
+        section.contacts .info .social a.messenger {
+          background: url("../img/svg/messenger-blue.svg") center center/100% 100% no-repeat; }
+        section.contacts .info .social a.viber {
+          background: url("../img/svg/Viber-blue.svg") center center/100% 100% no-repeat; }
+        section.contacts .info .social a.telegram {
+          background: url("../img/svg/Telegram-blue.svg") center center/100% 100% no-repeat; }
+    section.contacts .info .address {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 48px; }
+      @media (max-width: 767px) {
+        section.contacts .info .address {
+          margin-bottom: 0; } }
+      section.contacts .info .address .link {
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #333;
+        margin: 0;
+        display: block;
+        text-decoration: none; }
+        @media (max-width: 860px) {
+          section.contacts .info .address .link {
+            font-size: 21px; } }
+    section.contacts .info .media {
+      display: flex;
+      flex-direction: column; }
+      section.contacts .info .media .links {
+        display: flex;
+        align-items: center; }
+      section.contacts .info .media a {
+        width: 34px;
+        height: 34px;
+        margin-right: 8px; }
+        @media (max-width: 860px) {
+          section.contacts .info .media a {
+            width: 28px;
+            height: 28px; } }
+        section.contacts .info .media a:last-child {
+          margin-right: 0; }
+        section.contacts .info .media a.youtube {
+          background: url("../img/svg/youtube-blue.svg") center center/100% 100% no-repeat; }
+        section.contacts .info .media a.facebook {
+          background: url("../img/svg/facebook-blue.svg") center center/100% 100% no-repeat; }
+        section.contacts .info .media a.instgram {
+          background: url("../img/svg/instagram-blue.svg") center center/100% 100% no-repeat; }
+  section.contacts .map {
+    width: 833px;
+    height: 549px; }
+    @media (max-width: 1365px) {
+      section.contacts .map {
+        width: 520px;
+        height: 480px; } }
+    @media (max-width: 860px) {
+      section.contacts .map {
+        width: 480px;
+        height: 400px; } }
+    @media (max-width: 767px) {
+      section.contacts .map {
+        width: 100%;
+        margin-bottom: 40px; } }
+    section.contacts .map iframe {
+      width: 100%;
+      height: 100%; }

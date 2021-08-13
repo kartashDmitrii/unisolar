@@ -1,0 +1,68 @@
+section.project-data {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 138px; }
+  @media (max-width: 767px) {
+    section.project-data {
+      margin-bottom: 60px; } }
+  section.project-data .section-title {
+    margin-bottom: 80px; }
+    @media (max-width: 767px) {
+      section.project-data .section-title {
+        margin-bottom: 40px; } }
+    section.project-data .section-title .title {
+      margin-bottom: 0;
+      max-width: 460px; }
+  section.project-data .text {
+    margin-left: 158px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px; }
+    @media (max-width: 767px) {
+      section.project-data .text {
+        margin-left: 0;
+        margin-bottom: 40px; } }
+    section.project-data .text > * {
+      margin: 0; }
+    section.project-data .text p {
+      font-size: 21px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: #333; }
+  section.project-data .data {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 20px; }
+    @media (max-width: 1200px) {
+      section.project-data .data {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 576px) {
+      section.project-data .data {
+        grid-template-columns: 1fr; } }
+    section.project-data .data .elem {
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      section.project-data .data .elem .number {
+        font-family: "Druk Wide Cyr";
+        font-weight: 500;
+        font-size: 55px;
+        line-height: 90%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #0667b1;
+        margin: 0 0 28px; }
+        @media (max-width: 767px) {
+          section.project-data .data .elem .number {
+            font-size: 36px;
+            margin-bottom: 14px; } }
+      section.project-data .data .elem .info {
+        font-size: 21px;
+        line-height: 120%;
+        letter-spacing: -0.02em;
+        color: #333;
+        margin: 0; }
+        @media (max-width: 767px) {
+          section.project-data .data .elem .info {
+            font-size: 18px; } }

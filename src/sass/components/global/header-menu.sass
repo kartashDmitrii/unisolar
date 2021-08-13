@@ -1,0 +1,155 @@
+.header-menu-popup.popup
+  flex-direction: column
+  background: #ffffff
+  padding: 40px 0
+  box-sizing: border-box
+  width: 100%
+  @media (max-width: 767px)
+    padding: 20px 0
+  @media (max-width: 576px)
+    padding: 15px 0
+    height: 100vh
+    position: relative
+  .container
+    @media (max-width: 576px)
+      position: static
+  .top-menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 60px
+    @media (max-width: 767px)
+      flex-direction: column
+      margin-bottom: 20px
+    .left-side
+      display: flex
+      align-items: flex-start
+      @media (max-width: 767px)
+        width: 100%
+        justify-content: space-between
+        margin-bottom: 20px
+      @media (max-width: 576px)
+        justify-content: flex-start
+    .right-side
+      display: flex
+      align-items: center
+      @media (max-width: 767px)
+        width: 100%
+        justify-content: space-between
+      @media (max-width: 576px)
+        flex-direction: column
+        align-items: flex-start
+    .buttons
+      display: flex
+      align-items: center
+    .close
+      width: 24px
+      height: 24px
+      background: url("../img/svg/close-blue.svg") center center / 100% 100% no-repeat
+      cursor: pointer
+      margin-right: 60px
+      @media (max-width: 767px)
+        margin-right: 24px
+      @media (max-width: 576px)
+        position: absolute
+        top: 15px
+        left: 15px
+    .logo
+      width: 171px
+      height: auto
+      @media (max-width: 576px)
+        flex: 1
+        display: flex
+        justify-content: center
+        img
+          width: 130px
+    .phone
+      font-weight: 600
+      font-size: 21px
+      line-height: 150%
+      letter-spacing: -0.02em
+      color: #0667b1
+      margin-right: 56px
+      text-decoration: none
+      @media (max-width: 767px)
+        margin-right: 24px
+      @media (max-width: 576px)
+        margin-bottom: 20px
+    .consultation
+      width: 133px
+      height: 42px
+      display: flex
+      align-items: center
+      justify-content: center
+      border: 1px solid #0667B1
+      box-sizing: border-box
+      border-radius: 61px
+      background: transparent
+      font-weight: 600
+      font-size: 17px
+      line-height: 150%
+      letter-spacing: -0.02em
+      color: #0667B1
+      text-align: center
+      margin-right: 16px
+      cursor: pointer
+    .language
+      display: flex
+      flex-direction: column
+      @media (max-width: 576px)
+        position: absolute
+        right: 15px
+        top: 15px
+      a
+        width: 42px
+        height: 42px
+        display: flex
+        text-decoration: none
+        align-items: center
+        justify-content: center
+        font-weight: 600
+        font-size: 17px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #0667B1
+        background: none
+        border: 1px solid #0667B1
+        box-sizing: border-box
+        border-radius: 50%
+        cursor: pointer
+  .menu
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    .name
+      margin: 0 0 24px
+      font-size: 16px
+      line-height: 150%
+      letter-spacing: -0.02em
+      color: #8d8d8d
+      @media (max-width: 767px)
+        margin-bottom: 16px
+    ul
+      padding: 0
+      margin: 0
+      display: flex
+      flex-direction: column
+      list-style: none
+      li
+        font-family: "Druk Wide Cyr"
+        font-size: 22px
+        line-height: 150%
+        text-transform: uppercase
+        letter-spacing: -0.02em
+        color: #333
+        margin-bottom: 16px
+        @media (max-width: 767px)
+          font-size: 18px
+          margin-bottom: 12px
+        @media (max-width: 576px)
+          font-size: 15px
+        &:last-child
+          margin-bottom: 0
+        a
+          color: inherit
+          text-decoration: inherit

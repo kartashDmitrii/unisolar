@@ -1,0 +1,127 @@
+section.contacts
+  display: flex
+  align-items: center
+  margin-top: 48px
+  margin-bottom: 136px
+  @media (max-width: 767px)
+    flex-direction: column-reverse
+    margin-bottom: 60px
+  .info
+    display: flex
+    flex-direction: column
+    width: calc(100% - 893px)
+    margin-right: 30px
+    @media (max-width: 1365px)
+      width: calc(100% - 550px)
+    @media (max-width: 860px)
+      width: calc(100% - 500px)
+      margin-right: 20px
+    @media (max-width: 767px)
+      width: 100%
+      margin-right: 0
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-gap: 30px
+      align-items: flex-start
+    @media (max-width: 480px)
+      grid-template-columns: 1fr
+      grid-gap: 15px
+    .contact
+      display: flex
+      flex-direction: column
+      margin-bottom: 24px
+      @media (max-width: 767px)
+        margin-bottom: 0
+      a
+        font-weight: 600
+        font-size: 27px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #333
+        margin: 0
+        display: block
+        text-decoration: none
+        @media (max-width: 860px)
+          font-size: 21px
+    .text
+      font-size: 16px
+      line-height: 150%
+      letter-spacing: -0.02em
+      color: #8d8d8d
+      margin: 0 0 24px
+    .social
+      display: flex
+      align-items: center
+      margin: 0 0 48px
+      @media (max-width: 767px)
+        margin-bottom: 0
+      a
+        width: 34px
+        height: 34px
+        margin-right: 18px
+        @media (max-width: 860px)
+          width: 28px
+          height: 28px
+        &:last-child
+          margin-right: 0
+        &.whatsapp
+          background: url("../img/svg/WhatsApp-blue.svg") center center / 100% 100% no-repeat
+        &.messenger
+          background: url("../img/svg/messenger-blue.svg") center center / 100% 100% no-repeat
+        &.viber
+          background: url("../img/svg/Viber-blue.svg") center center / 100% 100% no-repeat
+        &.telegram
+          background: url("../img/svg/Telegram-blue.svg") center center / 100% 100% no-repeat
+    .address
+      display: flex
+      flex-direction: column
+      margin: 0 0 48px
+      @media (max-width: 767px)
+        margin-bottom: 0
+      .link
+        font-weight: 600
+        font-size: 27px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #333
+        margin: 0
+        display: block
+        text-decoration: none
+        @media (max-width: 860px)
+          font-size: 21px
+    .media
+      display: flex
+      flex-direction: column
+      .links
+        display: flex
+        align-items: center
+      a
+        width: 34px
+        height: 34px
+        margin-right: 8px
+        @media (max-width: 860px)
+          width: 28px
+          height: 28px
+        &:last-child
+          margin-right: 0
+        &.youtube
+          background: url("../img/svg/youtube-blue.svg") center center / 100% 100% no-repeat
+        &.facebook
+          background: url("../img/svg/facebook-blue.svg") center center / 100% 100% no-repeat
+        &.instgram
+          background: url("../img/svg/instagram-blue.svg") center center / 100% 100% no-repeat
+  .map
+    width: 833px
+    height: 549px
+    @media (max-width: 1365px)
+      width: 520px
+      height: 480px
+    @media (max-width: 860px)
+      width: 480px
+      height: 400px
+    @media (max-width: 767px)
+      width: 100%
+      margin-bottom: 40px
+    iframe
+      width: 100%
+      height: 100%

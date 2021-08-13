@@ -1,0 +1,46 @@
+section.achievements
+  background: url("../img/achievements_bg.png") center center / cover no-repeat
+  width: 100%
+  height: 520px
+  display: flex
+  align-items: flex-end
+  padding: 0 0 58px
+  margin-bottom: 196px
+  box-sizing: border-box
+  @media (max-width: 767px)
+    margin-bottom: 60px
+    height: auto
+    padding: 24px 0
+  .container
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    @media (max-width: 1200px)
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-row-gap: 40px
+    @media (max-width: 767px)
+      grid-template-columns: 1fr
+    .count
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 275px
+      text-align: center
+      @media (max-width: 1200px)
+        margin: 0 auto
+      .number
+        font-family: "Druk Wide Cyr"
+        font-weight: 500
+        font-size: 55px
+        line-height: 90%
+        text-transform: uppercase
+        letter-spacing: -0.02em
+        margin: 0 0 28px
+        color: #fff
+      .name
+        font-size: 21px
+        line-height: 120%
+        letter-spacing: -0.02em
+        color: #ffffff
+        margin: 0

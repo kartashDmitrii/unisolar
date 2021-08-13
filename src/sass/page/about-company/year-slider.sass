@@ -1,0 +1,132 @@
+section.year-slider
+  margin-bottom: 136px
+  @media (max-width: 767px)
+    margin-bottom: 60px
+  .year-slide-wrapper
+    padding-left: 160px
+    position: relative
+    @media (max-width: 1365px)
+      padding-left: 0
+  .years
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    margin: auto
+    background: linear-gradient(90.29deg, #074D83 -72.18%, #0667B1 129.2%)
+    border-radius: 7px
+    width: 386px
+    height: 386px
+    display: flex
+    flex-direction: column
+    padding: 70px 45px
+    box-sizing: border-box
+    z-index: 2
+    @media (max-width: 1365px)
+      bottom: auto
+    @media (max-width: 1024px)
+      position: relative
+      flex-direction: row
+      align-items: center
+      width: 100%
+      height: auto
+      padding: 30px 20px 10px
+      border-radius: 0
+    .year
+      margin-bottom: 80px
+      width: 100%
+      @media (max-width: 1024px)
+        margin-bottom: 0
+      @media (max-width: 576px)
+        text-align: center
+    .value
+      font-family: "Druk Wide Cyr"
+      font-weight: 500
+      font-size: 72px
+      line-height: 110%
+      letter-spacing: -0.02em
+      text-transform: uppercase
+      color: #ffffff
+      margin: 0
+      @media (max-width: 767px)
+        font-size: 54px
+    .name
+      font-size: 16px
+      line-height: 150%
+      letter-spacing: -0.02em
+      color: #ffffff
+      margin: 0 0 8px
+      @media (max-width: 1024px)
+        margin: 0
+        position: absolute
+        left: 20px
+        top: 5px
+    .navigation
+      display: flex
+      align-items: center
+      justify-content: center
+      @media (max-width: 576px)
+        display: none
+      .btn
+        width: 56px
+        height: 56px
+        border-radius: 50%
+        border: 1px solid #ffffff
+        background: url("../img/svg/arrow-next-white.svg") center center / 5px 10px no-repeat
+        cursor: pointer
+        @media (max-width: 767px)
+          width: 42px
+          height: 42px
+        &.prev
+          transform: rotate(180deg)
+          margin-right: 24px
+  .data-slider
+    width: 100%
+    .data
+      border-radius: 7px
+      background-position: center center
+      background-size: cover
+      background-repeat: no-repeat
+      @media (max-width: 1024px)
+        border-radius: 0
+      .data-wrapper
+        border-radius: 7px
+        padding: 143px 112px 143px 397px
+        background: rgba(6, 103, 177, .3)
+        @media (max-width: 1024px)
+          border-radius: 0
+          padding: 40px 20px
+        .data-grid
+          display: grid
+          grid-template-columns: 1fr 1fr
+          grid-column-gap: 60px
+          grid-row-gap: 100px
+          @media (max-width: 767px)
+            grid-column-gap: 20px
+            grid-row-gap: 40px
+          @media (max-width: 576px)
+            grid-template-columns: 1fr
+          .elem
+            display: flex
+            flex-direction: column
+            align-items: center
+            .count
+              font-family: "Druk Wide Cyr"
+              font-weight: 500
+              font-size: 55px
+              line-height: 90%
+              letter-spacing: -0.02em
+              text-transform: uppercase
+              color: #ffffff
+              margin: 0 0 24px
+              @media (max-width: 767px)
+                font-size: 48px
+            .name
+              font-size: 21px
+              line-height: 150%
+              text-align: center
+              letter-spacing: -0.02em
+              color: #ffffff
+              margin: 0
+              @media (max-width: 767px)
+                font-size: 18px

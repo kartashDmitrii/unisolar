@@ -1,0 +1,27 @@
+section.service-stages {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 136px; }
+  section.service-stages .flex {
+    display: flex;
+    flex-wrap: wrap; }
+    section.service-stages .flex .elem {
+      width: calc(50% - 30px);
+      display: flex;
+      flex-direction: column; }
+      section.service-stages .flex .elem:nth-child(odd) {
+        margin-right: 30px; }
+      section.service-stages .flex .elem:nth-child(even) {
+        margin-left: 30px; }
+      section.service-stages .flex .elem .number {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #8d8d8d;
+        margin: 0 0 24px; }
+      section.service-stages .flex .elem .text {
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #333;
+        margin: 0; }

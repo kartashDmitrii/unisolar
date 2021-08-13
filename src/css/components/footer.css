@@ -1,0 +1,179 @@
+footer {
+  background: #333333;
+  padding: 40px 0 24px; }
+  footer .container {
+    display: flex;
+    flex-direction: column; }
+    footer .container .top-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 48px; }
+      @media (max-width: 576px) {
+        footer .container .top-block {
+          margin-bottom: 24px; } }
+      footer .container .top-block .logo {
+        width: 171px;
+        height: auto; }
+      footer .container .top-block .language {
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        text-decoration: none; }
+    @media (max-width: 767px) {
+      footer .container .links {
+        display: none; } }
+    footer .container .links ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      align-items: center; }
+      footer .container .links ul li {
+        margin-right: 40px;
+        font-size: 19px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #ffffff; }
+        @media (max-width: 840px) {
+          footer .container .links ul li {
+            margin-right: 20px; } }
+        footer .container .links ul li:last-child {
+          margin-right: 0; }
+        footer .container .links ul li a {
+          color: inherit;
+          text-decoration: inherit; }
+    footer .container .info {
+      display: flex;
+      flex-direction: column;
+      padding: 24px 0;
+      border: solid rgba(255, 255, 255, 0.3);
+      border-width: 1px 0; }
+      footer .container .info .text {
+        font-family: "Druk Wide Cyr";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin: 0 0 16px; }
+      footer .container .info .bottom-info {
+        display: flex;
+        align-items: center; }
+        @media (max-width: 1365px) {
+          footer .container .info .bottom-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 20px; } }
+        @media (max-width: 576px) {
+          footer .container .info .bottom-info {
+            grid-template-columns: 1fr; } }
+        footer .container .info .bottom-info > * {
+          position: relative;
+          padding-right: 72px;
+          margin-right: 45px; }
+          @media (max-width: 1365px) {
+            footer .container .info .bottom-info > * {
+              padding-right: 0;
+              margin-right: 0; }
+              footer .container .info .bottom-info > *:nth-child(even) {
+                justify-self: flex-end; } }
+    @media (max-width: 1365px) and (max-width: 576px) {
+      footer .container .info .bottom-info > *:nth-child(even) {
+        justify-self: flex-start; } }
+          footer .container .info .bottom-info > *:after {
+            content: '';
+            width: 2px;
+            height: 35px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            background: #ffffff;
+            opacity: .3;
+            transform: rotate(23.07deg); }
+            @media (max-width: 1365px) {
+              footer .container .info .bottom-info > *:after {
+                content: none; } }
+          footer .container .info .bottom-info > *:last-child {
+            padding-right: 0;
+            margin-right: 0; }
+            footer .container .info .bottom-info > *:last-child:after {
+              content: none; }
+      footer .container .info .phone, footer .container .info .email {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 140%;
+        color: #ffffff;
+        position: relative; }
+        @media (max-width: 767px) {
+          footer .container .info .phone, footer .container .info .email {
+            font-size: 24px; } }
+        footer .container .info .phone a, footer .container .info .email a {
+          color: inherit;
+          text-decoration: inherit; }
+    footer .container .social ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      align-items: center; }
+      footer .container .social ul li {
+        width: 34px;
+        height: 34px;
+        margin-right: 18px; }
+        footer .container .social ul li:last-child {
+          margin-right: 0; }
+        footer .container .social ul li.whatsapp {
+          background: url("../img/svg/WhatsApp.svg") center center/100% 100% no-repeat; }
+        footer .container .social ul li.messenger {
+          background: url("../img/svg/messenger.svg") center center/100% 100% no-repeat; }
+        footer .container .social ul li.viber {
+          background: url("../img/svg/Viber.svg") center center/100% 100% no-repeat; }
+        footer .container .social ul li.telegram {
+          background: url("../img/svg/Telegram.svg") center center/100% 100% no-repeat; }
+        footer .container .social ul li.youtube {
+          background: url("../img/svg/youtube.svg") center center/100% 100% no-repeat; }
+        footer .container .social ul li.facebook {
+          background: url("../img/svg/facebook.svg") center center/100% 100% no-repeat; }
+        footer .container .social ul li.instgram {
+          background: url("../img/svg/instagram.svg") center center/100% 100% no-repeat; }
+    footer .container .privacy {
+      display: flex;
+      align-items: center; }
+      @media (max-width: 1200px) {
+        footer .container .privacy {
+          flex-wrap: wrap;
+          justify-content: flex-end; } }
+      footer .container .privacy .text {
+        flex: 1;
+        font-size: 14px;
+        line-height: 21px;
+        color: #ffffff; }
+        @media (max-width: 1200px) {
+          footer .container .privacy .text {
+            min-width: 100%; } }
+      footer .container .privacy .link {
+        font-size: 14px;
+        line-height: 21px;
+        color: #707070;
+        margin-right: 108px;
+        text-decoration: none; }
+        @media (max-width: 576px) {
+          footer .container .privacy .link {
+            margin-right: 40px; } }
+      footer .container .privacy .company-image {
+        width: 76.15px;
+        height: auto;
+        display: flex; }

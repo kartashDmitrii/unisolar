@@ -1,0 +1,20 @@
+section.privacy {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.privacy {
+      margin-bottom: 60px; } }
+  section.privacy > * {
+    margin: 0 0 15px; }
+    section.privacy > *:last-child {
+      margin-bottom: 0; }
+  section.privacy p {
+    font-size: 21px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #333; }
+    @media (max-width: 767px) {
+      section.privacy p {
+        font-size: 18px; } }

@@ -1,0 +1,151 @@
+.newsletter {
+  background: url("../img/newsletter_bg.png") center center/cover no-repeat;
+  padding: 41px 112px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 136px; }
+  @media (max-width: 1365px) {
+    .newsletter {
+      padding: 41px 80px 40px; } }
+  @media (max-width: 900px) {
+    .newsletter {
+      padding: 20px 40px; } }
+  @media (max-width: 767px) {
+    .newsletter {
+      margin-bottom: 60px;
+      padding: 20px 15px; } }
+  .newsletter .top-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 72px; }
+    @media (max-width: 767px) {
+      .newsletter .top-block {
+        flex-direction: column;
+        margin-bottom: 40px; } }
+    .newsletter .top-block .title {
+      font-family: "Druk Wide Cyr";
+      font-weight: 500;
+      font-size: 27px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin: 0;
+      padding-left: 46px;
+      position: relative; }
+      @media (max-width: 576px) {
+        .newsletter .top-block .title {
+          padding-left: 24px; } }
+      .newsletter .top-block .title:before {
+        content: '';
+        width: 2px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: #ffffff; }
+    .newsletter .top-block .desc {
+      margin-top: 12px;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      max-width: 310px; }
+  .newsletter .form {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3); }
+    @media (max-width: 767px) {
+      .newsletter .form {
+        flex-direction: column;
+        border: none;
+        padding-bottom: 0; } }
+    .newsletter .form label {
+      display: flex;
+      align-items: center;
+      flex: 1; }
+      @media (max-width: 767px) {
+        .newsletter .form label {
+          padding-bottom: 16px;
+          border-bottom: 2px solid rgba(255, 255, 255, 0.3); } }
+      @media (max-width: 576px) {
+        .newsletter .form label {
+          flex-direction: column;
+          width: 100%;
+          align-items: flex-start; } }
+      .newsletter .form label span {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-family: "Druk Wide Cyr";
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.3);
+        position: relative;
+        padding-right: 21px; }
+        @media (max-width: 1365px) {
+          .newsletter .form label span {
+            font-size: 18px; } }
+        @media (max-width: 900px) {
+          .newsletter .form label span {
+            font-size: 16px; } }
+        @media (max-width: 767px) {
+          .newsletter .form label span {
+            font-size: 12px; } }
+        @media (max-width: 576px) {
+          .newsletter .form label span {
+            margin-bottom: 15px; } }
+        .newsletter .form label span:after {
+          content: '';
+          width: 3px;
+          height: 34px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          background: #ffffff; }
+          @media (max-width: 576px) {
+            .newsletter .form label span:after {
+              content: none; } }
+      .newsletter .form label input {
+        margin: 0 18px;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        background: transparent;
+        flex: 1; }
+        @media (max-width: 576px) {
+          .newsletter .form label input {
+            margin: 0; } }
+    .newsletter .form .subscribe {
+      width: 175px;
+      height: 52px;
+      opacity: 0.3;
+      border: 1px solid #FFFFFF;
+      box-sizing: border-box;
+      border-radius: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      background: transparent;
+      cursor: pointer; }
+      @media (max-width: 767px) {
+        .newsletter .form .subscribe {
+          margin-top: 15px;
+          align-self: flex-end; } }

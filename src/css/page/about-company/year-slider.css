@@ -1,0 +1,148 @@
+section.year-slider {
+  margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.year-slider {
+      margin-bottom: 60px; } }
+  section.year-slider .year-slide-wrapper {
+    padding-left: 160px;
+    position: relative; }
+    @media (max-width: 1365px) {
+      section.year-slider .year-slide-wrapper {
+        padding-left: 0; } }
+  section.year-slider .years {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background: linear-gradient(90.29deg, #074D83 -72.18%, #0667B1 129.2%);
+    border-radius: 7px;
+    width: 386px;
+    height: 386px;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 45px;
+    box-sizing: border-box;
+    z-index: 2; }
+    @media (max-width: 1365px) {
+      section.year-slider .years {
+        bottom: auto; } }
+    @media (max-width: 1024px) {
+      section.year-slider .years {
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 30px 20px 10px;
+        border-radius: 0; } }
+    section.year-slider .years .year {
+      margin-bottom: 80px;
+      width: 100%; }
+      @media (max-width: 1024px) {
+        section.year-slider .years .year {
+          margin-bottom: 0; } }
+      @media (max-width: 576px) {
+        section.year-slider .years .year {
+          text-align: center; } }
+    section.year-slider .years .value {
+      font-family: "Druk Wide Cyr";
+      font-weight: 500;
+      font-size: 72px;
+      line-height: 110%;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin: 0; }
+      @media (max-width: 767px) {
+        section.year-slider .years .value {
+          font-size: 54px; } }
+    section.year-slider .years .name {
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin: 0 0 8px; }
+      @media (max-width: 1024px) {
+        section.year-slider .years .name {
+          margin: 0;
+          position: absolute;
+          left: 20px;
+          top: 5px; } }
+    section.year-slider .years .navigation {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      @media (max-width: 576px) {
+        section.year-slider .years .navigation {
+          display: none; } }
+      section.year-slider .years .navigation .btn {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        background: url("../img/svg/arrow-next-white.svg") center center/5px 10px no-repeat;
+        cursor: pointer; }
+        @media (max-width: 767px) {
+          section.year-slider .years .navigation .btn {
+            width: 42px;
+            height: 42px; } }
+        section.year-slider .years .navigation .btn.prev {
+          transform: rotate(180deg);
+          margin-right: 24px; }
+  section.year-slider .data-slider {
+    width: 100%; }
+    section.year-slider .data-slider .data {
+      border-radius: 7px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      @media (max-width: 1024px) {
+        section.year-slider .data-slider .data {
+          border-radius: 0; } }
+      section.year-slider .data-slider .data .data-wrapper {
+        border-radius: 7px;
+        padding: 143px 112px 143px 397px;
+        background: rgba(6, 103, 177, 0.3); }
+        @media (max-width: 1024px) {
+          section.year-slider .data-slider .data .data-wrapper {
+            border-radius: 0;
+            padding: 40px 20px; } }
+        section.year-slider .data-slider .data .data-wrapper .data-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 60px;
+          grid-row-gap: 100px; }
+          @media (max-width: 767px) {
+            section.year-slider .data-slider .data .data-wrapper .data-grid {
+              grid-column-gap: 20px;
+              grid-row-gap: 40px; } }
+          @media (max-width: 576px) {
+            section.year-slider .data-slider .data .data-wrapper .data-grid {
+              grid-template-columns: 1fr; } }
+          section.year-slider .data-slider .data .data-wrapper .data-grid .elem {
+            display: flex;
+            flex-direction: column;
+            align-items: center; }
+            section.year-slider .data-slider .data .data-wrapper .data-grid .elem .count {
+              font-family: "Druk Wide Cyr";
+              font-weight: 500;
+              font-size: 55px;
+              line-height: 90%;
+              letter-spacing: -0.02em;
+              text-transform: uppercase;
+              color: #ffffff;
+              margin: 0 0 24px; }
+              @media (max-width: 767px) {
+                section.year-slider .data-slider .data .data-wrapper .data-grid .elem .count {
+                  font-size: 48px; } }
+            section.year-slider .data-slider .data .data-wrapper .data-grid .elem .name {
+              font-size: 21px;
+              line-height: 150%;
+              text-align: center;
+              letter-spacing: -0.02em;
+              color: #ffffff;
+              margin: 0; }
+              @media (max-width: 767px) {
+                section.year-slider .data-slider .data .data-wrapper .data-grid .elem .name {
+                  font-size: 18px; } }
