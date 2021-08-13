@@ -1,0 +1,42 @@
+section.popular-questions
+  display: flex
+  flex-direction: column
+  margin-bottom: 136px
+  .grid
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 60px
+    .block
+      display: flex
+      flex-direction: column
+      .elem
+        background: #F3F3F3
+        border-radius: 7px
+        padding: 32px
+        box-sizing: border-box
+        display: flex
+        flex-direction: column
+        margin-bottom: 32px
+        &:last-child
+          margin-bottom: 0
+        .name
+          font-weight: 600
+          font-size: 20px
+          line-height: 150%
+          letter-spacing: -0.02em
+          color: #333
+          margin: 0 0 23px
+        .desc
+          display: flex
+          flex-direction: column
+          &>*
+            margin: 0 0 10px
+            &:last-child
+              margin-bottom: 0
+          p
+            font-size: 20px
+            line-height: 150%
+            letter-spacing: -0.02em
+            color: #333
+          div>*
+            margin: 0

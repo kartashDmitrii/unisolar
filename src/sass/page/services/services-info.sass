@@ -1,0 +1,44 @@
+section.services-info
+  display: flex
+  align-items: flex-start
+  margin-top: 136px
+  margin-bottom: 136px
+  @media (max-width: 870px)
+    flex-direction: column
+  @media (max-width: 767px)
+    margin-top: 60px
+    margin-bottom: 60px
+  .title
+    width: 480px
+    font-weight: 700
+    font-size: 32px
+    line-height: 150%
+    letter-spacing: -0.02em
+    color: #0667b1
+    margin: 0 78px 0 0
+    @media (max-width: 1365px)
+      margin-right: 20px
+      font-size: 28px
+      width: 420px
+    @media (max-width: 870px)
+      width: 100%
+      margin: 0 0 20px
+  .desc
+    width: calc(100% - 558px)
+    display: flex
+    flex-direction: column
+    @media (max-width: 1365px)
+      width: calc(100% - 440px)
+    @media (max-width: 870px)
+      width: 100%
+    &>*
+      margin: 0 0 10px
+      &:last-child
+        margin-bottom: 0
+    p
+      font-size: 24px
+      line-height: 150%
+      letter-spacing: -0.02em
+      color: #333
+      @media (max-width: 920px)
+        font-size: 21px

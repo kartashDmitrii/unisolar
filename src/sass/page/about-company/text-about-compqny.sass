@@ -1,0 +1,63 @@
+section.text-about-company
+  display: flex
+  align-items: flex-start
+  margin-top: 136px
+  margin-bottom: 136px
+  @media (max-width: 767px)
+    margin-bottom: 60px
+    margin-top: 60px
+    flex-direction: column-reverse
+  .text
+    display: flex
+    flex-direction: column
+    width: 610px
+    margin: 46px 124px 0 160px
+    @media (max-width: 1365px)
+      margin-left: 0
+      margin-right: 60px
+    @media (max-width: 1200px)
+      width: calc(100% - 400px)
+    @media (max-width: 767px)
+      width: 100%
+      margin: 0
+    .title
+      font-weight: 700
+      font-size: 24px
+      line-height: 150%
+      letter-spacing: -0.02em
+      color: #0667b1
+      margin: 0 0 32px
+    .desc
+      display: flex
+      flex-direction: column
+      &>*
+        margin: 0 0 15px
+        &:last-child
+          margin-bottom: 0
+      p
+        font-size: 24px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #333
+        @media (max-width: 910px)
+          font-size: 18px
+  .image
+    width: calc(100% - (160px + 610px + 124px))
+    height: auto
+    border-radius: 7px
+    @media (max-width: 1365px)
+      width: calc(100% - (610px + 60px))
+    @media (max-width: 1365px)
+      width: calc(100% - 600px)
+    @media (max-width: 910px)
+      max-width: 340px
+      width: 100%
+    @media (max-width: 767px)
+      height: 340px
+      margin-bottom: 20px
+      align-self: center
+      img
+        object-fit: cover
+        height: 100%
+    img
+      border-radius: 7px

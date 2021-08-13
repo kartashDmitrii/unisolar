@@ -1,0 +1,38 @@
+section.services-grid
+  display: flex
+  flex-direction: column-reverse
+  margin-bottom: 136px
+  @media (max-width: 767px)
+    margin-bottom: 60px
+  .grid
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-column-gap: 60px
+    grid-row-gap: 48px
+    @media (max-width: 1365px)
+      grid-column-gap: 30px
+      grid-row-gap: 30px
+    @media (max-width: 860px)
+      grid-template-columns: 1fr 1fr
+    @media (max-width: 480px)
+      grid-template-columns: 1fr
+    .elem
+      display: flex
+      flex-direction: column
+      text-decoration: none
+      .image
+        width: 100%
+        height: auto
+        border-radius: 7px
+        img
+          border-radius: 7px
+      .name
+        font-weight: 600
+        font-size: 21px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #333
+        text-align: center
+        margin: 0
+        @media (max-width: 1024px)
+          font-size: 18px

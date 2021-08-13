@@ -74,8 +74,8 @@ if (document.querySelector('section.main-video')){
     })
 }
 
-if (document.querySelector('section.questions')){
-    let section = document.querySelector('section.questions');
+if (document.querySelector('section.questions-grid')){
+    let section = document.querySelector('section.questions-grid');
     let grid = section.querySelector('.grid');
     for (let i = 0; i < 2; i++){
         let block = document.createElement('div');
@@ -84,7 +84,9 @@ if (document.querySelector('section.questions')){
     }
     section.querySelectorAll('.elem').forEach( (elem, i) => {
         [...grid.querySelectorAll('.block')][i % 2].appendChild(elem);
-        new hideList(elem)
+        if (section.classList.contains('questions')) {
+            new hideList(elem)
+        }
     })
 }
 if (document.querySelector('section.partners')){
@@ -177,6 +179,26 @@ if (document.querySelector('section.project-images')){
         },
         thumbs: {
             swiper: allImagesSlider
+        }
+    })
+}
+if (document.querySelector('section.year-slider')){
+    let yearsSlider = new Swiper('section.year-slider .years .year', {
+        allowTouchMove: false,
+        navigation: {
+            nextEl: "section.year-slider .navigation .next",
+            prevEl: "section.year-slider .navigation .prev",
+        }
+    });
+    let dataSlider = new Swiper('section.year-slider .data-slider', {
+        navigation: {
+            nextEl: 'section.year-slider .navigation .next',
+            prevEl: 'section.year-slider .navigation .prev',
+        },
+        on: {
+            activeIndexChange(){
+                yearsSlider.slideTo(dataSlider.activeIndex)
+            }
         }
     })
 }

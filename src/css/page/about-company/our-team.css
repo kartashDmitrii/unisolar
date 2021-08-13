@@ -1,0 +1,44 @@
+section.our-team {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.our-team {
+      margin-bottom: 60px; } }
+  section.our-team .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 40px; }
+    @media (max-width: 910px) {
+      section.our-team .team-grid {
+        grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 767px) {
+      section.our-team .team-grid {
+        grid-gap: 20px; } }
+    @media (max-width: 576px) {
+      section.our-team .team-grid {
+        grid-template-columns: 1fr 1fr; } }
+    section.our-team .team-grid .elem {
+      display: flex;
+      flex-direction: column; }
+      section.our-team .team-grid .elem .image {
+        width: 100%;
+        height: auto;
+        border-radius: 7px;
+        margin-bottom: 16px; }
+        section.our-team .team-grid .elem .image img {
+          border-radius: 7px; }
+      section.our-team .team-grid .elem .name {
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 150%;
+        letter-spacing: -0.02px;
+        color: #333;
+        margin: 0 0 8px; }
+      section.our-team .team-grid .elem .position {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #8d8d8d;
+        margin: 0; }

@@ -1,0 +1,27 @@
+section.service-example {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 136px; }
+  section.service-example .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 58px;
+    grid-row-gap: 48px; }
+    section.service-example .grid .elem {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none; }
+      section.service-example .grid .elem .image {
+        width: 100%;
+        height: auto;
+        border-radius: 7px;
+        margin-bottom: 24px; }
+        section.service-example .grid .elem .image img {
+          border-radius: 7px; }
+      section.service-example .grid .elem .name {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #333;
+        margin: 0; }

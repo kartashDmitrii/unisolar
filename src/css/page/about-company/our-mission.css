@@ -1,0 +1,68 @@
+section.our-mission {
+  display: flex;
+  align-items: center;
+  margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.our-mission {
+      margin-bottom: 60px;
+      flex-direction: column; } }
+  section.our-mission .image {
+    width: 607px;
+    height: auto;
+    margin-right: 61px;
+    border-radius: 7px; }
+    section.our-mission .image img {
+      border-radius: 7px; }
+    @media (max-width: 1365px) {
+      section.our-mission .image {
+        width: 408px;
+        margin-right: 20px; } }
+    @media (max-width: 910px) {
+      section.our-mission .image {
+        width: 320px; } }
+    @media (max-width: 767px) {
+      section.our-mission .image {
+        max-width: 408px;
+        width: 100%;
+        margin: 0 0 20px; } }
+  section.our-mission .text {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 668px); }
+    @media (max-width: 1365px) {
+      section.our-mission .text {
+        width: calc(100% - 428px); } }
+    @media (max-width: 910px) {
+      section.our-mission .text {
+        width: calc(100% - 350px); } }
+    @media (max-width: 767px) {
+      section.our-mission .text {
+        width: 100%; } }
+    section.our-mission .text .phrase {
+      font-style: italic;
+      font-size: 40px;
+      line-height: 130%;
+      letter-spacing: -0.02em;
+      color: #333;
+      margin: 0 0 40px; }
+      @media (max-width: 1365px) {
+        section.our-mission .text .phrase {
+          font-size: 32px; } }
+      @media (max-width: 910px) {
+        section.our-mission .text .phrase {
+          font-size: 28px; } }
+      @media (max-width: 767px) {
+        section.our-mission .text .phrase {
+          font-size: 24px;
+          margin-bottom: 20px; } }
+    section.our-mission .text .name {
+      font-style: italic;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: #0667b1;
+      margin: 0; }
+      @media (max-width: 767px) {
+        section.our-mission .text .name {
+          font-size: 21px; } }

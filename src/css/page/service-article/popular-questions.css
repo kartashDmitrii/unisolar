@@ -1,0 +1,42 @@
+section.popular-questions {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 136px; }
+  section.popular-questions .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px; }
+    section.popular-questions .grid .block {
+      display: flex;
+      flex-direction: column; }
+      section.popular-questions .grid .block .elem {
+        background: #F3F3F3;
+        border-radius: 7px;
+        padding: 32px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px; }
+        section.popular-questions .grid .block .elem:last-child {
+          margin-bottom: 0; }
+        section.popular-questions .grid .block .elem .name {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 150%;
+          letter-spacing: -0.02em;
+          color: #333;
+          margin: 0 0 23px; }
+        section.popular-questions .grid .block .elem .desc {
+          display: flex;
+          flex-direction: column; }
+          section.popular-questions .grid .block .elem .desc > * {
+            margin: 0 0 10px; }
+            section.popular-questions .grid .block .elem .desc > *:last-child {
+              margin-bottom: 0; }
+          section.popular-questions .grid .block .elem .desc p {
+            font-size: 20px;
+            line-height: 150%;
+            letter-spacing: -0.02em;
+            color: #333; }
+          section.popular-questions .grid .block .elem .desc div > * {
+            margin: 0; }
