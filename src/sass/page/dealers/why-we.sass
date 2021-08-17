@@ -1,0 +1,82 @@
+.why-we
+  display: flex
+  flex-direction: column
+  margin-bottom: 136px
+  @media (max-width: 767px)
+    margin-bottom: 60px
+  .section-title
+    margin-bottom: 57px
+    @media (max-width: 767px)
+      margin-bottom: 24px
+    .title
+      max-width: 482px
+      margin-bottom: 0
+  .flex
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 16px
+    .elem
+      width: calc(50% - 30px)
+      @media (max-width: 767px)
+        width: 100%
+      &:nth-child(odd)
+        margin-right: 30px
+        @media (max-width: 767px)
+          margin: 0 0 20px
+      &:nth-child(even)
+        margin-left: 30px
+        @media (max-width: 767px)
+          margin: 0 0 20px
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      margin: 0 0 40px
+      .number
+        font-size: 16px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #8d8d8d
+        margin: 0 0 24px
+      .text
+        font-size: 24px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #333
+        margin: 0
+        @media (max-width: 767px)
+          font-size: 21px
+  .buttons
+    display: flex
+    align-items: center
+    justify-content: center
+    @media (max-width: 576px)
+      flex-direction: column
+      align-items: center
+    a
+      padding: 20px 40px
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+      background: #0667B1
+      border: 1px solid #0667B1
+      box-sizing: border-box
+      border-radius: 70px
+      font-weight: 600
+      font-size: 17px
+      line-height: 150%
+      letter-spacing: -0.02em
+      color: #ffffff
+      text-decoration: none
+      margin-right: 16px
+      @media (max-width: 576px)
+        padding: 20px
+        width: 100%
+        margin-bottom: 20px
+      &:last-child
+        margin-right: 0
+        @media (max-width: 576px)
+          margin-bottom: 0
+      &.program
+        background: transparent
+        color: #0667B1

@@ -3,20 +3,40 @@ section.service-desc {
   flex-direction: column;
   margin-top: 80px;
   margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.service-desc {
+      margin-bottom: 60px;
+      margin-top: 40px; } }
   section.service-desc .section-title .title {
     max-width: 482px; }
+    @media (max-width: 767px) {
+      section.service-desc .section-title .title {
+        margin-bottom: 0; } }
   section.service-desc .content {
     display: flex;
     align-items: flex-start; }
+    @media (max-width: 767px) {
+      section.service-desc .content {
+        flex-direction: column-reverse; } }
     section.service-desc .content .text {
       display: flex;
       flex-direction: column;
       margin-right: 60px;
       width: calc(100% - 670px); }
+      @media (max-width: 1365px) {
+        section.service-desc .content .text {
+          margin-right: 40px;
+          width: calc(100% - 470px); } }
+      @media (max-width: 767px) {
+        section.service-desc .content .text {
+          width: 100%; } }
       section.service-desc .content .text .desc {
         display: flex;
         flex-direction: column;
         margin: 0 0 48px; }
+        @media (max-width: 767px) {
+          section.service-desc .content .text .desc {
+            margin-bottom: 16px; } }
         section.service-desc .content .text .desc > * {
           margin: 0 0 10px; }
           section.service-desc .content .text .desc > *:last-child {
@@ -26,6 +46,9 @@ section.service-desc {
           line-height: 150%;
           letter-spacing: -0.02em;
           color: #333; }
+          @media (max-width: 920px) {
+            section.service-desc .content .text .desc p {
+              font-size: 18px; } }
       section.service-desc .content .text .btn {
         width: 193px;
         height: 66px;
@@ -41,9 +64,20 @@ section.service-desc {
         background: #0667b1;
         box-sizing: border-box;
         border-radius: 70px; }
+        @media (max-width: 767px) {
+          section.service-desc .content .text .btn {
+            height: 40px; } }
     section.service-desc .content .image {
       width: 610px;
       height: auto;
       border-radius: 7px; }
+      @media (max-width: 1365px) {
+        section.service-desc .content .image {
+          width: 430px; } }
+      @media (max-width: 767px) {
+        section.service-desc .content .image {
+          max-width: 430px;
+          width: 100%;
+          margin: 0 auto 20px; } }
       section.service-desc .content .image img {
         border-radius: 7px; }

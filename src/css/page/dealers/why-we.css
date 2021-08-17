@@ -1,0 +1,91 @@
+.why-we {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    .why-we {
+      margin-bottom: 60px; } }
+  .why-we .section-title {
+    margin-bottom: 57px; }
+    @media (max-width: 767px) {
+      .why-we .section-title {
+        margin-bottom: 24px; } }
+    .why-we .section-title .title {
+      max-width: 482px;
+      margin-bottom: 0; }
+  .why-we .flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px; }
+    .why-we .flex .elem {
+      width: calc(50% - 30px);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 0 40px; }
+      @media (max-width: 767px) {
+        .why-we .flex .elem {
+          width: 100%; } }
+      .why-we .flex .elem:nth-child(odd) {
+        margin-right: 30px; }
+        @media (max-width: 767px) {
+          .why-we .flex .elem:nth-child(odd) {
+            margin: 0 0 20px; } }
+      .why-we .flex .elem:nth-child(even) {
+        margin-left: 30px; }
+        @media (max-width: 767px) {
+          .why-we .flex .elem:nth-child(even) {
+            margin: 0 0 20px; } }
+      .why-we .flex .elem .number {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #8d8d8d;
+        margin: 0 0 24px; }
+      .why-we .flex .elem .text {
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #333;
+        margin: 0; }
+        @media (max-width: 767px) {
+          .why-we .flex .elem .text {
+            font-size: 21px; } }
+  .why-we .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (max-width: 576px) {
+      .why-we .buttons {
+        flex-direction: column;
+        align-items: center; } }
+    .why-we .buttons a {
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: #0667B1;
+      border: 1px solid #0667B1;
+      box-sizing: border-box;
+      border-radius: 70px;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      text-decoration: none;
+      margin-right: 16px; }
+      @media (max-width: 576px) {
+        .why-we .buttons a {
+          padding: 20px;
+          width: 100%;
+          margin-bottom: 20px; } }
+      .why-we .buttons a:last-child {
+        margin-right: 0; }
+        @media (max-width: 576px) {
+          .why-we .buttons a:last-child {
+            margin-bottom: 0; } }
+      .why-we .buttons a.program {
+        background: transparent;
+        color: #0667B1; }

@@ -2,10 +2,16 @@ section.popular-questions
   display: flex
   flex-direction: column
   margin-bottom: 136px
+  @media (max-width: 767px)
+    margin-bottom: 60px
   .grid
     display: grid
     grid-template-columns: 1fr 1fr
     grid-column-gap: 60px
+    @media (max-width: 1200px)
+      grid-column-gap: 20px
+    @media (max-width: 767px)
+      grid-template-columns: 1fr
     .block
       display: flex
       flex-direction: column
@@ -17,8 +23,12 @@ section.popular-questions
         display: flex
         flex-direction: column
         margin-bottom: 32px
+        @media (max-width: 767px)
+          margin-bottom: 20px
         &:last-child
           margin-bottom: 0
+          @media (max-width: 767px)
+            margin-bottom: 20px
         .name
           font-weight: 600
           font-size: 20px
@@ -26,6 +36,8 @@ section.popular-questions
           letter-spacing: -0.02em
           color: #333
           margin: 0 0 23px
+          @media (max-width: 920px)
+            font-size: 18px
         .desc
           display: flex
           flex-direction: column
@@ -38,5 +50,7 @@ section.popular-questions
             line-height: 150%
             letter-spacing: -0.02em
             color: #333
+            @media (max-width: 920px)
+              font-size: 16px
           div>*
             margin: 0

@@ -1,0 +1,68 @@
+section.dealers-text
+  display: flex
+  align-items: flex-start
+  margin-top: 136px
+  margin-bottom: 136px
+  @media (max-width: 767px)
+    margin-top: 60px
+    margin-bottom: 60px
+    flex-direction: column-reverse
+  .image
+    width: 387px
+    height: auto
+    border-radius: 7px
+    @media (max-width: 767px)
+      width: 100%
+      max-width: 387px
+      align-self: center
+      margin-bottom: 20px
+    img
+      border-radius: 7px
+  .text
+    margin-right: 124px
+    width: calc(100% - 511px)
+    display: flex
+    flex-direction: column
+    font-size: 24px
+    line-height: 150%
+    letter-spacing: -0.02em
+    color: #333
+    @media (max-width: 1365px)
+      margin-right: 24px
+      width: calc(100% - 411px)
+    @media (max-width: 920px)
+      font-size: 18px
+    @media (max-width: 767px)
+      width: 100%
+    .desc
+      display: flex
+      flex-direction: column
+      margin: 0 0 24px
+      &>*
+        margin: 0 0 24px
+        &:last-child
+          margin-bottom: 0
+    .title
+      margin: 0 0 24px
+      font-weight: 600
+    .list
+      padding: 0
+      margin: 0
+      list-style: none
+      display: flex
+      flex-direction: column
+      li
+        margin: 0 0 16px
+        position: relative
+        padding-left: 24px
+        &:before
+          content: ''
+          width: 8px
+          height: 8px
+          position: absolute
+          left: 0
+          top: 14px
+          border-radius: 50%
+          background: #0667b1
+        &:last-child
+          margin-bottom: 0

@@ -1,0 +1,73 @@
+section.dealers-text {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 136px;
+  margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.dealers-text {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      flex-direction: column-reverse; } }
+  section.dealers-text .image {
+    width: 387px;
+    height: auto;
+    border-radius: 7px; }
+    @media (max-width: 767px) {
+      section.dealers-text .image {
+        width: 100%;
+        max-width: 387px;
+        align-self: center;
+        margin-bottom: 20px; } }
+    section.dealers-text .image img {
+      border-radius: 7px; }
+  section.dealers-text .text {
+    margin-right: 124px;
+    width: calc(100% - 511px);
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #333; }
+    @media (max-width: 1365px) {
+      section.dealers-text .text {
+        margin-right: 24px;
+        width: calc(100% - 411px); } }
+    @media (max-width: 920px) {
+      section.dealers-text .text {
+        font-size: 18px; } }
+    @media (max-width: 767px) {
+      section.dealers-text .text {
+        width: 100%; } }
+    section.dealers-text .text .desc {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 24px; }
+      section.dealers-text .text .desc > * {
+        margin: 0 0 24px; }
+        section.dealers-text .text .desc > *:last-child {
+          margin-bottom: 0; }
+    section.dealers-text .text .title {
+      margin: 0 0 24px;
+      font-weight: 600; }
+    section.dealers-text .text .list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column; }
+      section.dealers-text .text .list li {
+        margin: 0 0 16px;
+        position: relative;
+        padding-left: 24px; }
+        section.dealers-text .text .list li:before {
+          content: '';
+          width: 8px;
+          height: 8px;
+          position: absolute;
+          left: 0;
+          top: 14px;
+          border-radius: 50%;
+          background: #0667b1; }
+        section.dealers-text .text .list li:last-child {
+          margin-bottom: 0; }

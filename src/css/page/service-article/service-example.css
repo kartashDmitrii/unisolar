@@ -2,11 +2,22 @@ section.service-example {
   display: flex;
   flex-direction: column;
   margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.service-example {
+      margin-bottom: 60px; } }
   section.service-example .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 58px;
     grid-row-gap: 48px; }
+    @media (max-width: 920px) {
+      section.service-example .grid {
+        grid-column-gap: 30px;
+        grid-row-gap: 20px; } }
+    @media (max-width: 767px) {
+      section.service-example .grid {
+        grid-template-columns: 1fr;
+        grid-row-gap: 48px; } }
     section.service-example .grid .elem {
       display: flex;
       flex-direction: column;
@@ -16,6 +27,9 @@ section.service-example {
         height: auto;
         border-radius: 7px;
         margin-bottom: 24px; }
+        @media (max-width: 576px) {
+          section.service-example .grid .elem .image {
+            margin-bottom: 12px; } }
         section.service-example .grid .elem .image img {
           border-radius: 7px; }
       section.service-example .grid .elem .name {
@@ -25,3 +39,6 @@ section.service-example {
         letter-spacing: -0.02em;
         color: #333;
         margin: 0; }
+        @media (max-width: 576px) {
+          section.service-example .grid .elem .name {
+            font-size: 16px; } }

@@ -1,26 +1,30 @@
-section.service-stages
+section.conditions
   display: flex
   flex-direction: column
   margin-bottom: 136px
   @media (max-width: 767px)
     margin-bottom: 60px
-  .flex
-    display: flex
-    flex-wrap: wrap
+  .section-title
+    margin-bottom: 80px
+    @media (max-width: 767px)
+      margin-bottom: 40px
+    .title
+      max-width: 482px
+      margin-bottom: 0
+  .list
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-column-gap: 60px
+    @media (max-width: 1024px)
+      grid-column-gap: 30px
+      grid-template-columns: 1fr 1fr
+    @media (max-width: 576px)
+      grid-template-columns: 1fr
     .elem
-      width: calc(50% - 30px)
       display: flex
       flex-direction: column
-      @media (max-width: 767px)
-        width: 100%
-      &:nth-child(odd)
-        margin-right: 30px
-        @media (max-width: 767px)
-          margin: 0 0 20px
-      &:nth-child(even)
-        margin-left: 30px
-        @media (max-width: 767px)
-          margin: 0 0 20px
+      align-items: flex-start
+      margin: 0 0 40px
       .number
         font-size: 16px
         line-height: 150%
@@ -28,8 +32,8 @@ section.service-stages
         color: #8d8d8d
         margin: 0 0 24px
         @media (max-width: 767px)
+          margin-bottom: 18px
           font-size: 14px
-          margin-bottom: 15px
       .text
         font-size: 24px
         line-height: 150%

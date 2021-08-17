@@ -3,21 +3,35 @@ section.service-desc
   flex-direction: column
   margin-top: 80px
   margin-bottom: 136px
+  @media (max-width: 767px)
+    margin-bottom: 60px
+    margin-top: 40px
   .section-title
     .title
       max-width: 482px
+      @media (max-width: 767px)
+        margin-bottom: 0
   .content
     display: flex
     align-items: flex-start
+    @media (max-width: 767px)
+      flex-direction: column-reverse
     .text
       display: flex
       flex-direction: column
       margin-right: 60px
       width: calc(100% - 670px)
+      @media(max-width: 1365px)
+        margin-right: 40px
+        width: calc(100% - 470px)
+      @media (max-width: 767px)
+        width: 100%
       .desc
         display: flex
         flex-direction: column
         margin: 0 0 48px
+        @media (max-width: 767px)
+          margin-bottom: 16px
         &>*
           margin: 0 0 10px
           &:last-child
@@ -27,6 +41,8 @@ section.service-desc
           line-height: 150%
           letter-spacing: -0.02em
           color: #333
+          @media(max-width: 920px)
+            font-size: 18px
       .btn
         width: 193px
         height: 66px
@@ -42,9 +58,17 @@ section.service-desc
         background: #0667b1
         box-sizing: border-box
         border-radius: 70px
+        @media (max-width: 767px)
+          height: 40px
     .image
       width: 610px
       height: auto
       border-radius: 7px
+      @media(max-width: 1365px)
+        width: 430px
+      @media (max-width: 767px)
+        max-width: 430px
+        width: 100%
+        margin: 0 auto 20px
       img
         border-radius: 7px

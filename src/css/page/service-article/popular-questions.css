@@ -2,10 +2,19 @@ section.popular-questions {
   display: flex;
   flex-direction: column;
   margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.popular-questions {
+      margin-bottom: 60px; } }
   section.popular-questions .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px; }
+    @media (max-width: 1200px) {
+      section.popular-questions .grid {
+        grid-column-gap: 20px; } }
+    @media (max-width: 767px) {
+      section.popular-questions .grid {
+        grid-template-columns: 1fr; } }
     section.popular-questions .grid .block {
       display: flex;
       flex-direction: column; }
@@ -17,8 +26,14 @@ section.popular-questions {
         display: flex;
         flex-direction: column;
         margin-bottom: 32px; }
+        @media (max-width: 767px) {
+          section.popular-questions .grid .block .elem {
+            margin-bottom: 20px; } }
         section.popular-questions .grid .block .elem:last-child {
           margin-bottom: 0; }
+          @media (max-width: 767px) {
+            section.popular-questions .grid .block .elem:last-child {
+              margin-bottom: 20px; } }
         section.popular-questions .grid .block .elem .name {
           font-weight: 600;
           font-size: 20px;
@@ -26,6 +41,9 @@ section.popular-questions {
           letter-spacing: -0.02em;
           color: #333;
           margin: 0 0 23px; }
+          @media (max-width: 920px) {
+            section.popular-questions .grid .block .elem .name {
+              font-size: 18px; } }
         section.popular-questions .grid .block .elem .desc {
           display: flex;
           flex-direction: column; }
@@ -38,5 +56,8 @@ section.popular-questions {
             line-height: 150%;
             letter-spacing: -0.02em;
             color: #333; }
+            @media (max-width: 920px) {
+              section.popular-questions .grid .block .elem .desc p {
+                font-size: 16px; } }
           section.popular-questions .grid .block .elem .desc div > * {
             margin: 0; }
