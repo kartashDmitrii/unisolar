@@ -202,3 +202,24 @@ if (document.querySelector('section.year-slider')){
         }
     })
 }
+if (document.querySelector('section.academy-reviews')){
+    let slider = new Swiper('section.academy-reviews .slider', {
+        navigation: {
+            nextEl: "section.academy-reviews .navigation .next",
+            prevEl: "section.academy-reviews .navigation .prev",
+        }
+    })
+}
+if (document.querySelector('section.who-need-b2b')){
+    let tabBtns = document.querySelectorAll('section.who-need-b2b .tab-buttons [data-tab]');
+    let tabs = document.querySelectorAll('section.who-need-b2b .tabs [data-tab]');
+    tabBtns.forEach( (elem) => {
+        elem.addEventListener('click', function () {
+            tabBtns.forEach( btn => btn.classList.remove('active'));
+            tabs.forEach( tab => tab.classList.remove('active'));
+
+            elem.classList.add('active');
+            [...tabs].find( tab => tab.dataset.tab === elem.dataset.tab).classList.add('active')
+        })
+    })
+}

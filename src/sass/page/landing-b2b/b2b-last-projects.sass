@@ -1,0 +1,48 @@
+section.b2b-last-projects
+  display: flex
+  flex-direction: column
+  margin-bottom: 136px
+  .section-title
+    .title
+      max-width: 565px
+  .grid
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    grid-column-gap: 60px
+    .elem
+      display: flex
+      flex-direction: column
+      .image-link
+        width: 100%
+        border-radius: 7px
+        margin-bottom: 16px
+        position: relative
+        &:before
+          content: ''
+          width: 94px
+          height: 66px
+          position: absolute
+          top: 0
+          right: 0
+          left: 0
+          bottom: 0
+          margin: auto
+          background: url("../img/svg/youtube-colored.svg") center center / 100% 100% no-repeat
+          @media (max-width: 576px)
+            width: 54px
+            height: auto
+        img
+          border-radius: 7px
+      .name
+        font-size: 16px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #8d8d8d
+        margin: 0 0 8px
+      .company
+        font-weight: 600
+        font-size: 18px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #333
+        margin: 0

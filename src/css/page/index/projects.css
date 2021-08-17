@@ -5,6 +5,8 @@ section.projects {
   @media (max-width: 767px) {
     section.projects {
       margin-bottom: 60px; } }
+  section.projects .section-title {
+    max-width: 480px; }
   section.projects .filters {
     margin-left: 160px;
     display: flex;

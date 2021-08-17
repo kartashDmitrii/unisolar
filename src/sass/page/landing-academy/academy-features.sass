@@ -1,0 +1,42 @@
+section.academy-features
+  margin-bottom: 61px
+  @media (max-width: 767px)
+    margin-bottom: 20px
+  .section-title
+    max-width: 480px
+    margin-bottom: 80px
+    @media (max-width: 767px)
+      margin-bottom: 24px
+    .title
+      margin: 0
+  .grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-column-gap: 60px
+    @media (max-width: 1200px)
+      grid-column-gap: 30px
+    @media (max-width: 767px)
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+    .elem
+      display: flex
+      flex-direction: column
+      .number
+        margin: 0 0 16px
+        font-size: 16px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #bdbdbd
+      .name
+        font-weight: 600
+        font-size: 24px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #0667b1
+        margin: 0 0 16px
+      .desc
+        font-size: 20px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #333
+        margin: 0

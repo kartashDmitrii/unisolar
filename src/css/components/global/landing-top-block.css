@@ -1,0 +1,170 @@
+section.landing-top-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 185px; }
+  @media (max-width: 767px) {
+    section.landing-top-block {
+      margin-bottom: 60px; } }
+  section.landing-top-block .links {
+    background: #333;
+    padding-top: 14px;
+    padding-bottom: 19px; }
+    section.landing-top-block .links ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap; }
+      section.landing-top-block .links ul li {
+        margin-top: 5px;
+        margin-right: 8px; }
+        section.landing-top-block .links ul li:last-child {
+          margin-right: 0; }
+        section.landing-top-block .links ul li a {
+          padding: 8px 16px;
+          border: 1px solid #FFFFFF;
+          box-sizing: border-box;
+          border-radius: 61px;
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 150%;
+          letter-spacing: -0.02em;
+          color: #ffffff;
+          display: block;
+          text-decoration: none; }
+          @media (max-width: 1200px) {
+            section.landing-top-block .links ul li a {
+              padding: 4px 8px;
+              font-size: 14px; } }
+          @media (max-width: 576px) {
+            section.landing-top-block .links ul li a {
+              font-size: 12px;
+              padding: 4px; } }
+  section.landing-top-block .banner {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 830px;
+    padding-top: 40px;
+    box-sizing: border-box; }
+    @media (max-width: 920px) {
+      section.landing-top-block .banner {
+        min-height: 580px; } }
+    section.landing-top-block .banner .container {
+      display: flex;
+      flex-direction: column; }
+      section.landing-top-block .banner .container .breadcrumbs {
+        margin-bottom: 162px; }
+        @media (max-width: 1200px) {
+          section.landing-top-block .banner .container .breadcrumbs {
+            margin-bottom: 80px; } }
+        section.landing-top-block .banner .container .breadcrumbs ul {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap; }
+          section.landing-top-block .banner .container .breadcrumbs ul li {
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+            padding-right: 20px;
+            margin-right: 16px;
+            position: relative; }
+            section.landing-top-block .banner .container .breadcrumbs ul li:after {
+              content: '';
+              width: 4px;
+              height: 4px;
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              margin: auto;
+              background: rgba(255, 255, 255, 0.4);
+              border-radius: 50%; }
+            section.landing-top-block .banner .container .breadcrumbs ul li:last-child {
+              padding-right: 0;
+              margin-right: 0; }
+              section.landing-top-block .banner .container .breadcrumbs ul li:last-child:after {
+                content: none; }
+            section.landing-top-block .banner .container .breadcrumbs ul li a {
+              color: inherit;
+              text-decoration: inherit; }
+            section.landing-top-block .banner .container .breadcrumbs ul li span {
+              opacity: .4; }
+      section.landing-top-block .banner .container .text {
+        max-width: 1170px;
+        align-self: center;
+        display: flex;
+        flex-direction: column; }
+        @media (max-width: 576px) {
+          section.landing-top-block .banner .container .text {
+            width: 100%; } }
+        section.landing-top-block .banner .container .text .title {
+          font-family: "Druk Wide Cyr";
+          font-weight: 500;
+          font-size: 42px;
+          line-height: 120%;
+          letter-spacing: -0.02em;
+          text-transform: uppercase;
+          color: #ffffff;
+          margin: 0 0 48px; }
+          @media (max-width: 920px) {
+            section.landing-top-block .banner .container .text .title {
+              font-size: 36px;
+              margin-bottom: 24px; } }
+          @media (max-width: 576px) {
+            section.landing-top-block .banner .container .text .title {
+              font-size: 24px; } }
+        section.landing-top-block .banner .container .text .desc {
+          font-size: 24px;
+          line-height: 150%;
+          color: #ffffff;
+          letter-spacing: -0.02em;
+          margin: 0 0 48px 160px; }
+          @media (max-width: 1200px) {
+            section.landing-top-block .banner .container .text .desc {
+              margin-left: 0; } }
+          @media (max-width: 920px) {
+            section.landing-top-block .banner .container .text .desc {
+              font-size: 18px; } }
+        section.landing-top-block .banner .container .text .buttons {
+          display: flex;
+          align-items: center;
+          margin: 0 0 0 160px; }
+          @media (max-width: 1200px) {
+            section.landing-top-block .banner .container .text .buttons {
+              margin: 0; } }
+          @media (max-width: 576px) {
+            section.landing-top-block .banner .container .text .buttons {
+              flex-direction: column; } }
+          section.landing-top-block .banner .container .text .buttons a {
+            padding: 20px 40px;
+            background: #FFFFFF;
+            border-radius: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 150%;
+            letter-spacing: -0.02em;
+            color: #343434;
+            text-decoration: none;
+            margin-right: 33.5px;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box; }
+            @media (max-width: 920px) {
+              section.landing-top-block .banner .container .text .buttons a {
+                padding: 12px 24px;
+                font-size: 14px; } }
+            @media (max-width: 576px) {
+              section.landing-top-block .banner .container .text .buttons a {
+                width: 100%;
+                margin: 0 0 5px; } }
+            section.landing-top-block .banner .container .text .buttons a.info {
+              background: transparent;
+              color: #ffffff; }

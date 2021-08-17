@@ -1,0 +1,148 @@
+section.academy-text-info
+  display: flex
+  align-items: flex-start
+  margin-bottom: 136px
+  @media (max-width: 960px)
+    flex-direction: column-reverse
+  @media (max-width: 767px)
+    margin-bottom: 60px
+  .text
+    width: calc(100% - 750px)
+    margin-right: 140px
+    display: flex
+    flex-direction: column
+    @media (max-width: 1365px)
+      margin-right: 20px
+      width: calc(100% - 560px)
+    @media (max-width: 960px)
+      width: 100%
+    .desc
+      margin-bottom: 46px
+      &>*
+        margin: 0 0 15px
+        &:last-child
+          margin-bottom: 0
+      p
+        font-size: 24px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #333
+        @media (max-width: 1024px)
+          font-size: 18px
+    .features
+      padding: 0
+      margin: 0 0 54px
+      list-style: none
+      display: flex
+      flex-direction: column
+      li
+        padding-left: 72px
+        position: relative
+        margin-bottom: 28px
+        font-weight: 600
+        font-size: 24px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #333
+        @media (max-width: 1024px)
+          padding-left: 48px
+        @media (max-width: 576px)
+          font-size: 21px
+          padding-left: 36px
+        &:last-child
+          margin-bottom: 0
+        &:before
+          content: ''
+          width: 48px
+          height: 48px
+          position: absolute
+          left: 0
+          top: -6px
+          background: url("../img/svg/academy-text-info-feature.svg") center center / 100% 100% no-repeat
+          @media (max-width: 1024px)
+            width: 36px
+            height: 36px
+            top: 0
+          @media (max-width: 576px)
+            width: 24px
+            height: 24px
+            top: 5.5px
+    .link
+      padding: 20px 40px
+      background: #0667B1
+      border-radius: 70px
+      font-weight: 600
+      font-size: 17px
+      line-height: 150%
+      letter-spacing: -0.02em
+      color: #ffffff
+      margin: 0
+      display: flex
+      align-items: center
+      justify-content: center
+      text-decoration: none
+      align-self: flex-start
+      box-sizing: border-box
+      @media (max-width: 767px)
+        padding: 8px 16px
+      @media (max-width: 576px)
+        width: 100%
+        font-size: 14px
+  .image
+    width: 610px
+    display: flex
+    flex-direction: column
+    @media (max-width: 1365px)
+      width: 540px
+    @media (max-width: 960px)
+      align-self: center
+      margin-bottom: 30px
+    @media (max-width: 576px)
+      width: 100%
+      max-width: 540px
+    .name
+      font-family: "Druk Wide Cyr"
+      font-weight: 500
+      font-size: 18px
+      line-height: 150%
+      letter-spacing: -0.02em
+      text-transform: uppercase
+      color: #333
+      margin: 0 0 16px
+      @media (max-width: 576px)
+        font-size: 16px
+    .position
+      font-size: 16px
+      line-height: 150%
+      letter-spacing: -0.02em
+      color: #8d8d8d
+      margin: 0 0 21px
+      @media (max-width: 576px)
+        font-size: 14px
+    .video-preview
+      position: relative
+      border-radius: 7px
+      margin: 0 0 16px
+      img
+        border-radius: 7px
+      &:before
+        content: ''
+        width: 94px
+        height: 66px
+        position: absolute
+        top: 0
+        right: 0
+        left: 0
+        bottom: 0
+        margin: auto
+        background: url("../img/svg/youtube-colored.svg") center center / 100% 100% no-repeat
+        @media (max-width: 576px)
+          width: 54px
+          height: auto
+    .duration
+      font-size: 16px
+      line-height: 150%
+      color: #8d8d8d
+      letter-spacing: -0.02em
+      margin: 0
+      align-self: flex-end

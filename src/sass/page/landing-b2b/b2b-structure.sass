@@ -1,0 +1,51 @@
+section.b2b-structure
+  display: flex
+  flex-direction: column
+  margin-bottom: 136px
+  .section-title
+    margin-bottom: 85px
+    @media (max-width: 767px)
+      margin-bottom: 30px
+    .title
+      margin-bottom: 0
+  .grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-column-gap: 60px
+    .elem
+      display: flex
+      flex-direction: column
+      .number
+        font-size: 16px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #8d8d8d
+        margin: 0 0 20px
+      .image
+        width: 104px
+        align-self: center
+        margin: 0 0 40px
+      .name
+        font-weight: 600
+        font-size: 24px
+        line-height: 150%
+        letter-spacing: -0.02em
+        text-align: center
+        color: #0667b1
+        margin: 0 0 32px
+        flex: 1
+      .link
+        padding: 20px 40px
+        background: #0667B1
+        border-radius: 70px
+        display: flex
+        align-items: center
+        justify-content: center
+        text-decoration: none
+        outline: none
+        font-weight: 600
+        font-size: 17px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #ffffff
+        align-self: center

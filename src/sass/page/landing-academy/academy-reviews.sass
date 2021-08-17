@@ -1,0 +1,93 @@
+section.academy-reviews
+  padding: 85px 0
+  background: #F3F3F3
+  .container
+    max-width: 980px
+    .section-title
+      margin-bottom: 40px
+      margin-left: 0
+      @media (max-width: 767px)
+        margin-bottom: 20px
+      .title
+        margin-bottom: 0
+    .info
+      margin-left: 48px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 40px
+      @media (max-width: 576px)
+        margin-left: 0
+        flex-direction: column
+      .desc
+        font-size: 16px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #8d8d8d
+        margin: 0
+        @media (max-width: 576px)
+          align-self: flex-start
+          margin-bottom: 40px
+    .slide
+      display: flex
+      flex-direction: column
+      .text
+        display: flex
+        flex-direction: column
+        letter-spacing: -0.02em
+        color: #333
+        margin-bottom: 40px
+        &>*
+          margin: 0 0 15px
+          &:last-child
+            margin-bottom: 0
+        p
+          font-size: 24px
+          line-height: 150%
+          @media (max-width: 576px)
+            font-size: 18px
+      .user
+        display: flex
+        align-items: center
+        @media (max-width: 576px)
+          flex-direction: column
+          align-items: flex-start
+        .image
+          width: auto
+          height: auto
+          margin-right: 63px
+          max-width: 147px
+          max-height: 50px
+          @media (max-width: 576px)
+            margin-right: 0
+        .name
+          font-weight: 600
+          font-size: 24px
+          line-height: 150%
+          letter-spacing: -0.02em
+          color: #333
+          margin: 0
+          flex: 1
+          @media (max-width: 576px)
+            margin-top: 30px
+            font-size: 18px
+
+  .navigation
+    display: flex
+    align-items: center
+    @media (max-width: 576px)
+      align-self: flex-end
+    .arrow
+      width: 20px
+      height: 28.5px
+      margin-right: 24px
+      cursor: pointer
+      background: url("../img/svg/arrow-right-blue.svg") center center / 100% 100% no-repeat
+      border: none
+      outline: none
+      &.swiper-button-disabled
+        background: url("../img/svg/arrow-right-grey.svg") center center / 100% 100% no-repeat
+      &.prev
+       transform: rotate(180deg)
+      &:last-child
+        margin-right: 0

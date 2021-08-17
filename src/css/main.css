@@ -26,13 +26,13 @@
   font-family: Proxima Nova;
   font-style: normal;
   font-weight: 600;
-  src: url(../fonts/ProximaNova/ProximaNova-SemiBold.woff) format("woff"); }
+  src: url(../fonts/ProximaNova/ProximaNova-Semibold.woff) format("woff"); }
 
 @font-face {
   font-family: Proxima Nova;
   font-style: italic;
   font-weight: 600;
-  src: url(../fonts/ProximaNova/ProximaNova-SemiBoldIt.woff) format("woff"); }
+  src: url(../fonts/ProximaNova/ProximaNova-Semiboldit.woff) format("woff"); }
 
 @font-face {
   font-family: Proxima Nova;
@@ -486,6 +486,18 @@ header {
       box-sizing: border-box;
       border-radius: 50%;
       cursor: pointer; }
+  header.black {
+    margin-bottom: 40px; }
+    header.black .menu ul li a {
+      color: #333; }
+    header.black .phone a {
+      color: #333; }
+    header.black .consultation {
+      color: #333;
+      border-color: #8d8d8d; }
+    header.black .language a {
+      color: #333;
+      border-color: #8d8d8d; }
 
 footer {
   background: #333333;
