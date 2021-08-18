@@ -2,6 +2,8 @@ section.b2b-last-projects
   display: flex
   flex-direction: column
   margin-bottom: 136px
+  @media (max-width: 767px)
+    margin-bottom: 60px
   .section-title
     .title
       max-width: 565px
@@ -9,6 +11,11 @@ section.b2b-last-projects
     display: grid
     grid-template-columns: repeat(3,1fr)
     grid-column-gap: 60px
+    @media (max-width: 1365px)
+      grid-column-gap: 20px
+    @media (max-width: 767px)
+      grid-template-columns: 1fr
+      grid-row-gap: 20px
     .elem
       display: flex
       flex-direction: column
@@ -28,9 +35,13 @@ section.b2b-last-projects
           bottom: 0
           margin: auto
           background: url("../img/svg/youtube-colored.svg") center center / 100% 100% no-repeat
-          @media (max-width: 576px)
+          @media (max-width: 980px)
             width: 54px
             height: auto
+          @media (max-width: 767px)
+            width: 94px
+          @media (max-width: 576px)
+            width: 54px
         img
           border-radius: 7px
       .name

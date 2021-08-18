@@ -2,6 +2,9 @@ section.academy-reviews.b2b-reviews {
   padding: 0;
   background: transparent;
   margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.academy-reviews.b2b-reviews {
+      margin-bottom: 60px; } }
   section.academy-reviews.b2b-reviews .section-title {
     margin-bottom: 40px; }
     section.academy-reviews.b2b-reviews .section-title .title {

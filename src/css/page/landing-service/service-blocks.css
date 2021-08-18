@@ -1,0 +1,137 @@
+section.service-blocks {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.service-blocks {
+      margin-bottom: 60px; } }
+  section.service-blocks .elem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 113px; }
+    @media (max-width: 767px) {
+      section.service-blocks .elem {
+        flex-direction: column-reverse;
+        margin-bottom: 30px; } }
+    section.service-blocks .elem:last-child {
+      margin-bottom: 0; }
+    section.service-blocks .elem:nth-child(even) {
+      flex-direction: row-reverse; }
+      @media (max-width: 767px) {
+        section.service-blocks .elem:nth-child(even) {
+          flex-direction: column-reverse; } }
+    section.service-blocks .elem .text {
+      width: calc(100% - 640px);
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      @media (max-width: 1200px) {
+        section.service-blocks .elem .text {
+          width: calc(100% - 450px); } }
+      @media (max-width: 767px) {
+        section.service-blocks .elem .text {
+          width: 100%; } }
+      section.service-blocks .elem .text .text-wrapper {
+        max-width: 480px;
+        display: flex;
+        flex-direction: column; }
+        @media (max-width: 1200px) {
+          section.service-blocks .elem .text .text-wrapper {
+            width: 100%;
+            max-width: none; } }
+      section.service-blocks .elem .text .name {
+        width: 100%;
+        position: relative;
+        font-family: "Druk Wide Cyr";
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #333;
+        margin: 0 0 40px; }
+        @media (max-width: 1365px) {
+          section.service-blocks .elem .text .name {
+            font-size: 21px;
+            margin-bottom: 32px; } }
+        section.service-blocks .elem .text .name span {
+          color: #0667b1; }
+        section.service-blocks .elem .text .name:before {
+          content: '';
+          width: 2px;
+          height: 20px;
+          position: absolute;
+          top: 10px;
+          left: -48px;
+          background: #0667b1; }
+      section.service-blocks .elem .text .desc {
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #333;
+        margin: 0 0 40px; }
+        @media (max-width: 1365px) {
+          section.service-blocks .elem .text .desc {
+            font-size: 18px;
+            margin-bottom: 32px; } }
+      section.service-blocks .elem .text .list {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0 0 40px;
+        list-style: none; }
+        @media (max-width: 1365px) {
+          section.service-blocks .elem .text .list {
+            margin-bottom: 32px; } }
+        section.service-blocks .elem .text .list li {
+          position: relative;
+          padding-left: 24px;
+          font-size: 20px;
+          line-height: 150%;
+          letter-spacing: -0.02em;
+          color: #333;
+          margin-bottom: 8px; }
+          @media (max-width: 1365px) {
+            section.service-blocks .elem .text .list li {
+              font-size: 18px; } }
+          section.service-blocks .elem .text .list li:last-child {
+            margin-bottom: 0; }
+          section.service-blocks .elem .text .list li:before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 12px;
+            background: #0667B1; }
+      section.service-blocks .elem .text .link {
+        background: #0667B1;
+        border-radius: 70px;
+        padding: 20px 40px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        align-self: flex-start; }
+    section.service-blocks .elem .image {
+      width: 498px;
+      height: 100%;
+      border-radius: 7px; }
+      @media (max-width: 1200px) {
+        section.service-blocks .elem .image {
+          width: 420px; } }
+      @media (max-width: 767px) {
+        section.service-blocks .elem .image {
+          width: 100%;
+          height: 380px;
+          margin-bottom: 30px; } }
+      section.service-blocks .elem .image img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 7px; }

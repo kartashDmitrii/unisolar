@@ -1,0 +1,120 @@
+section.b2b-realization
+  max-width: 990px
+  margin-bottom: 86px
+  @media (max-width: 767px)
+    margin-bottom: 35px
+  .section-title
+    margin-left: 0
+    margin-bottom: 34px
+    .title
+      max-width: 480px
+  .slider-navigation
+    display: none
+    align-items: center
+    justify-content: flex-end
+    margin-bottom: 20px
+    @media (max-width: 576px)
+      display: flex
+    .arrow
+      width: 43px
+      height: 20px
+      background: url("../img/svg/arrow-right-blue.svg") center center / 100% 100% no-repeat
+      cursor: pointer
+      &.prev
+        transform: rotate(180deg)
+        margin-right: 24px
+      &.swiper-button-disabled
+        opacity: .3
+  .slider-pagination
+    display: flex
+    align-items: center
+    margin-bottom: 40px
+    @media (max-width: 576px)
+      display: none
+    span
+      width: 48px
+      height: 48px
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+      position: relative
+      background: #FFFFFF
+      border: 1px solid #C4C4C4
+      box-sizing: border-box
+      font-size: 16px
+      line-height: 150%
+      letter-spacing: -0.02em
+      color: #333
+      opacity: 1
+      border-radius: 50%
+      margin-right: 40px
+      &:after
+        content: ''
+        width: 50px
+        height: 1px
+        left: calc(100% + 1px)
+        top: 0
+        position: absolute
+        user-select: none
+        pointer-events: none
+        bottom: 0
+        margin: auto
+        background: #C4C4C4
+      &:last-child
+        &:after
+          content: none
+      &.swiper-pagination-bullet-active
+        background: #0667B1
+        border-color: #0667B1
+        color: #ffffff
+  .slide
+    display: flex
+    flex-direction: column
+    .step
+      font-size: 16px
+      line-height: 150%
+      letter-spacing: -0.02em
+      color: #8d8d8d
+      margin: 0 0 24px
+    .image
+      width: 105px
+      height: 105px
+      margin: 0 0 24px
+    .name
+      font-weight: 600
+      font-size: 24px
+      line-height: 150%
+      letter-spacing: -0.02em
+      color: #0667b1
+      margin: 0 0 24px
+      @media (max-width: 767px)
+        font-size: 21px
+        margin-bottom: 16px
+    .desc
+      font-size: 24px
+      line-height: 150%
+      letter-spacing: -0.02em
+      color: #333
+      margin: 0 0 24px
+      @media (max-width: 767px)
+        font-size: 18px
+        margin-bottom: 16px
+    .link
+      padding-left: 40px
+      position: relative
+      font-size: 17px
+      line-height: 150%
+      letter-spacing: -0.02em
+      color: #0667b1
+      text-underline-offset: 2px
+      &:before
+        content: ''
+        width: 24px
+        height: 24px
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        margin: auto
+        background: url("../img/svg/download.svg") center center / 100% 100% no-repeat

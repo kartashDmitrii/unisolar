@@ -1,0 +1,80 @@
+section.service-complex {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.service-complex {
+      margin-bottom: 60px; } }
+  section.service-complex .section-title {
+    margin-bottom: 80px; }
+    @media (max-width: 1365px) {
+      section.service-complex .section-title {
+        margin-bottom: 40px; } }
+    @media (max-width: 767px) {
+      section.service-complex .section-title {
+        margin-bottom: 20px; } }
+    section.service-complex .section-title .title {
+      max-width: 480px; }
+  section.service-complex .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 60px; }
+    @media (max-width: 1365px) {
+      section.service-complex .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 30px; } }
+    @media (max-width: 767px) {
+      section.service-complex .grid {
+        grid-template-columns: 1fr; } }
+    section.service-complex .grid .elem {
+      display: flex;
+      flex-direction: column; }
+      section.service-complex .grid .elem .number {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #8d8d8d;
+        margin: 0 0 18px; }
+      section.service-complex .grid .elem .name {
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #0067b1;
+        margin: 0 0 6px;
+        height: 64px; }
+        @media (max-width: 1365px) {
+          section.service-complex .grid .elem .name {
+            height: auto;
+            margin-bottom: 20px; } }
+        @media (max-width: 767px) {
+          section.service-complex .grid .elem .name {
+            font-size: 18px; } }
+      section.service-complex .grid .elem .list {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none; }
+        section.service-complex .grid .elem .list li {
+          position: relative;
+          padding-left: 24px;
+          font-size: 20px;
+          line-height: 150%;
+          letter-spacing: -0.02em;
+          color: #333;
+          margin: 0 0 8px; }
+          @media (max-width: 767px) {
+            section.service-complex .grid .elem .list li {
+              font-size: 16px; } }
+          section.service-complex .grid .elem .list li:after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            position: absolute;
+            top: 12px;
+            left: 0;
+            border-radius: 50%;
+            background: #0667B1; }
+          section.service-complex .grid .elem .list li:last-child {
+            margin-bottom: 0; }

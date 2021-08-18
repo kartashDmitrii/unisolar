@@ -2,6 +2,8 @@ section.b2b-structure
   display: flex
   flex-direction: column
   margin-bottom: 136px
+  @media (max-width: 767px)
+    margin-bottom: 60px
   .section-title
     margin-bottom: 85px
     @media (max-width: 767px)
@@ -12,6 +14,11 @@ section.b2b-structure
     display: grid
     grid-template-columns: repeat(3, 1fr)
     grid-column-gap: 60px
+    @media (max-width: 980px)
+      grid-column-gap: 20px
+    @media (max-width: 767px)
+      grid-template-columns: 1fr
+      grid-row-gap: 20px
     .elem
       display: flex
       flex-direction: column
@@ -49,3 +56,6 @@ section.b2b-structure
         letter-spacing: -0.02em
         color: #ffffff
         align-self: center
+        @media (max-width: 980px)
+          padding: 8px 16px
+          font-size: 16px

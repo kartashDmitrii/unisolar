@@ -223,3 +223,18 @@ if (document.querySelector('section.who-need-b2b')){
         })
     })
 }
+if (document.querySelector('section.b2b-realization')) {
+    let slider = new Swiper('section.b2b-realization .slider',{
+        pagination: {
+            el: 'section.b2b-realization .slider-pagination',
+            clickable: true,
+            renderBullet(index, className){
+                return `<span class="${className}">${index + 1}</span>`
+            }
+        },
+        navigation: {
+            nextEl: "section.b2b-realization .slider-navigation .next",
+            prevEl: "section.b2b-realization .slider-navigation .prev",
+        }
+    })
+}

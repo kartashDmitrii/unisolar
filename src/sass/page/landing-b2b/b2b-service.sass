@@ -1,0 +1,96 @@
+section.b2b-service
+  display: flex
+  flex-direction: column
+  margin-bottom: 136px
+  @media (max-width: 767px)
+    margin-bottom: 60px
+  .section-title
+    .title
+      margin-bottom: 0
+      max-width: 565px
+  .grid
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 60px
+    margin-bottom: 48px
+    @media (max-width: 1200px)
+      grid-column-gap: 20px
+    @media (max-width: 767px)
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+    .elem
+      display: flex
+      flex-direction: column
+      .video-link
+        display: flex
+        width: 100%
+        height: auto
+        border-radius: 7px
+        position: relative
+        margin-bottom: 16px
+        img
+          border-radius: 7px
+        &:before
+          content: ''
+          width: 94px
+          height: 66px
+          position: absolute
+          top: 0
+          right: 0
+          left: 0
+          bottom: 0
+          margin: auto
+          background: url("../img/svg/youtube-colored.svg") center center / 100% 100% no-repeat
+          @media (max-width: 576px)
+            width: 54px
+            height: auto
+      .name
+        font-weight: 600
+        font-size: 16px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #333
+        margin: 0 0 8px
+        text-transform: uppercase
+      .desc
+        font-size: 16px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #8d8d8d
+        margin: 0
+  .service-link
+    padding: 20px 40px
+    background: #0667B1
+    border-radius: 70px
+    font-weight: 600
+    font-size: 17px
+    line-height: 150%
+    letter-spacing: -0.02em
+    color: #ffffff
+    border: none
+    outline: none
+    margin: 0 0 8px
+    align-self: center
+    text-decoration: none
+    text-align: center
+    @media (max-width: 480px)
+      padding: 8px 16px
+      font-size: 14px
+  .read-more
+    background: #FFFFFF
+    border: 1px solid #0667B1
+    box-sizing: border-box
+    border-radius: 70px
+    font-weight: 600
+    font-size: 17px
+    line-height: 150%
+    color: #0667b1
+    margin: 0
+    outline: none
+    text-decoration: none
+    padding: 20px 40px
+    align-self: center
+    text-align: center
+    @media (max-width: 480px)
+      padding: 8px 16px
+      font-size: 14px

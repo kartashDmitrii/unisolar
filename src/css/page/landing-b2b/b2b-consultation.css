@@ -1,0 +1,118 @@
+section.b2b-consultation {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.b2b-consultation {
+      margin-bottom: 60px; } }
+  section.b2b-consultation .section-title .title {
+    max-width: 455px; }
+  section.b2b-consultation .content {
+    display: flex;
+    align-items: center; }
+    @media (max-width: 767px) {
+      section.b2b-consultation .content {
+        flex-direction: column-reverse; } }
+    section.b2b-consultation .content .form {
+      display: flex;
+      flex-direction: column;
+      width: calc(100% - 742px); }
+      @media (max-width: 1365px) {
+        section.b2b-consultation .content .form {
+          width: calc(100% - 520px);
+          padding-right: 15px; } }
+      @media (max-width: 820px) {
+        section.b2b-consultation .content .form {
+          width: calc(100% - 440px); } }
+      @media (max-width: 767px) {
+        section.b2b-consultation .content .form {
+          width: 100%;
+          padding-right: 0; } }
+      section.b2b-consultation .content .form label {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 386px;
+        margin: 0 0 40px; }
+        @media (max-width: 767px) {
+          section.b2b-consultation .content .form label {
+            max-width: none; } }
+        section.b2b-consultation .content .form label span {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 150%;
+          letter-spacing: -0.02em;
+          color: #333;
+          margin: 0 0 12px;
+          display: block; }
+        section.b2b-consultation .content .form label input {
+          padding: 0 0 9px;
+          font-size: 16px;
+          line-height: 150%;
+          letter-spacing: -0.02em;
+          border: solid #333;
+          border-width: 0 0 1px;
+          outline: none; }
+      section.b2b-consultation .content .form button {
+        align-self: flex-start;
+        padding: 20px 40px;
+        background: #0667B1;
+        border-radius: 70px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        border: none;
+        outline: none; }
+    section.b2b-consultation .content .video-link {
+      display: flex;
+      flex-direction: column;
+      width: 722px; }
+      @media (max-width: 1365px) {
+        section.b2b-consultation .content .video-link {
+          width: 520px; } }
+      @media (max-width: 820px) {
+        section.b2b-consultation .content .video-link {
+          width: 440px; } }
+      @media (max-width: 767px) {
+        section.b2b-consultation .content .video-link {
+          margin-bottom: 20px;
+          width: 100%; } }
+      section.b2b-consultation .content .video-link .link {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-radius: 7px;
+        display: flex;
+        margin: 0 0 24px; }
+        section.b2b-consultation .content .video-link .link img {
+          border-radius: 7px; }
+        section.b2b-consultation .content .video-link .link:before {
+          content: '';
+          width: 94px;
+          height: 66px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          margin: auto;
+          background: url("../img/svg/youtube-colored.svg") center center/100% 100% no-repeat; }
+          @media (max-width: 576px) {
+            section.b2b-consultation .content .video-link .link:before {
+              width: 54px;
+              height: auto; } }
+      section.b2b-consultation .content .video-link .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #8d8d8d; }
+        section.b2b-consultation .content .video-link .info p {
+          margin: 0;
+          padding-right: 15px; }
+          section.b2b-consultation .content .video-link .info p:last-child {
+            padding-right: 0; }
