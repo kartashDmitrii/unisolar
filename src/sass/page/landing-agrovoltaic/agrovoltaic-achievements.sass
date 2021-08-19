@@ -1,1 +1,44 @@
 section.agrovoltaic-achievements
+  display: flex
+  flex-direction: column
+  margin-bottom: 136px
+  @media (max-width: 767px)
+    margin-bottom: 60px
+  .grid
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-column-gap: 60px
+    @media (max-width: 1365px)
+      grid-template-columns: 1fr 1fr
+      grid-row-gap: 60px
+    @media (max-width: 767px)
+      grid-column-gap: 20px
+      grid-row-gap: 20px
+    @media (max-width: 576px)
+      grid-template-columns: 1fr
+      grid-row-gap: 40px
+    .elem
+      display: flex
+      flex-direction: column
+      align-items: center
+      .number
+        font-family: "Druk Wide Cyr"
+        font-weight: 500
+        font-size: 41px
+        line-height: 90%
+        letter-spacing: -0.02em
+        text-transform: uppercase
+        color: #0667B1
+        text-align: center
+        margin: 0 0 38px
+        @media (max-width: 767px)
+          font-size: 38px
+        @media (max-width: 576px)
+          margin-bottom: 20px
+      .name
+        font-size: 16px
+        line-height: 150%
+        letter-spacing: -0.02em
+        color: #8d8d8d
+        margin: 0
+        text-align: center

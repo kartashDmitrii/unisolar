@@ -1,0 +1,50 @@
+section.agrovoltaic-achievements {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.agrovoltaic-achievements {
+      margin-bottom: 60px; } }
+  section.agrovoltaic-achievements .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 60px; }
+    @media (max-width: 1365px) {
+      section.agrovoltaic-achievements .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 60px; } }
+    @media (max-width: 767px) {
+      section.agrovoltaic-achievements .grid {
+        grid-column-gap: 20px;
+        grid-row-gap: 20px; } }
+    @media (max-width: 576px) {
+      section.agrovoltaic-achievements .grid {
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px; } }
+    section.agrovoltaic-achievements .grid .elem {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      section.agrovoltaic-achievements .grid .elem .number {
+        font-family: "Druk Wide Cyr";
+        font-weight: 500;
+        font-size: 41px;
+        line-height: 90%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #0667B1;
+        text-align: center;
+        margin: 0 0 38px; }
+        @media (max-width: 767px) {
+          section.agrovoltaic-achievements .grid .elem .number {
+            font-size: 38px; } }
+        @media (max-width: 576px) {
+          section.agrovoltaic-achievements .grid .elem .number {
+            margin-bottom: 20px; } }
+      section.agrovoltaic-achievements .grid .elem .name {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #8d8d8d;
+        margin: 0;
+        text-align: center; }

@@ -1,0 +1,82 @@
+section.agrovoltaic-who-need {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 136px; }
+  @media (max-width: 767px) {
+    section.agrovoltaic-who-need {
+      margin-bottom: 60px; } }
+  section.agrovoltaic-who-need .section-title {
+    margin-bottom: 48px; }
+    @media (max-width: 767px) {
+      section.agrovoltaic-who-need .section-title {
+        margin-bottom: 24px; } }
+    section.agrovoltaic-who-need .section-title .title {
+      max-width: 480px;
+      margin-bottom: 0; }
+  section.agrovoltaic-who-need .content {
+    display: flex;
+    align-items: center; }
+    @media (max-width: 767px) {
+      section.agrovoltaic-who-need .content {
+        flex-direction: column-reverse; } }
+    section.agrovoltaic-who-need .content .text {
+      width: calc(100% - 558px);
+      margin-right: 60px;
+      display: flex;
+      flex-direction: column; }
+      @media (max-width: 1200px) {
+        section.agrovoltaic-who-need .content .text {
+          margin-right: 20px;
+          width: calc(100% - 400px); } }
+      @media (max-width: 767px) {
+        section.agrovoltaic-who-need .content .text {
+          width: 100%;
+          margin-right: 0; } }
+      section.agrovoltaic-who-need .content .text .desc {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 48px; }
+        section.agrovoltaic-who-need .content .text .desc > * {
+          margin: 0 0 15px; }
+          section.agrovoltaic-who-need .content .text .desc > *:last-child {
+            margin-bottom: 0; }
+        section.agrovoltaic-who-need .content .text .desc p {
+          font-size: 20px;
+          line-height: 150%;
+          letter-spacing: -0.02em;
+          color: #333; }
+          @media (max-width: 1200px) {
+            section.agrovoltaic-who-need .content .text .desc p {
+              font-size: 18px; } }
+      section.agrovoltaic-who-need .content .text .link {
+        align-self: flex-start;
+        padding: 20px 40px;
+        background: #0667B1;
+        border-radius: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        text-decoration: none;
+        outline: none; }
+        @media (max-width: 1024px) {
+          section.agrovoltaic-who-need .content .text .link {
+            padding: 10px 16px; } }
+    section.agrovoltaic-who-need .content .image {
+      width: 498px;
+      border-radius: 7px; }
+      @media (max-width: 1200px) {
+        section.agrovoltaic-who-need .content .image {
+          width: 380px; } }
+      @media (max-width: 767px) {
+        section.agrovoltaic-who-need .content .image {
+          width: 100%;
+          max-width: 498px;
+          align-self: center;
+          margin-bottom: 20px; } }
+      section.agrovoltaic-who-need .content .image img {
+        border-radius: 7px; }
