@@ -2,7 +2,42 @@ import hideList from "./components/hideList";
 import NumberTimer from "./components/NumberTimer";
 import popupFunc from "./components/popupFunc";
 
+/*  fix */
 
+if (document.querySelector('header')){
+    let header = document.querySelector('header');
+    let isBlack = header.classList.contains('black')
+    let scrollNumber = 70;
+    let colorSwitch = true;
+    document.addEventListener('scroll', function () {
+        header.classList[window.scrollY > scrollNumber ? 'add' : 'remove']('scroll');
+        document.body.classList[window.scrollY > scrollNumber ? 'add' : 'remove']('scroll');
+        document.querySelector('.header-menu-popup').classList[window.scrollY > scrollNumber ? 'add' : 'remove']('scroll');
+        if(!isBlack){
+            header.classList[window.scrollY > scrollNumber ? 'add' : 'remove']('black');
+            if (window.scrollY > scrollNumber){
+                if (colorSwitch) {
+                    colorSwitch = false
+                    header.querySelectorAll('.burger img').forEach(img => img.classList.toggle('show'))
+                    header.querySelectorAll('.logo img').forEach(img => img.classList.toggle('show'))
+                }
+            }else {
+                if (!colorSwitch) {
+                    colorSwitch = true
+                    header.querySelectorAll('.burger img').forEach(img => img.classList.toggle('show'))
+                    header.querySelectorAll('.logo img').forEach(img => img.classList.toggle('show'))
+                }
+            }
+        }
+        if (window.scrollY > scrollNumber){
+            document.body.style.paddingTop = isBlack ? '137px' : '97px'
+        } else {
+            document.body.style.paddingTop = '0px'
+        }
+    })
+}
+
+/*  fix */
 if (document.querySelector('section.main-slider')){
     let allSlide = document.querySelector('section.main-slider .slide-number .all');
     allSlide.innerText = document.querySelectorAll('section.main-slider .slide').length;

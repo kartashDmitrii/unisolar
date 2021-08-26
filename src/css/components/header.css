@@ -1,7 +1,5 @@
 header {
-  display: flex;
-  align-items: center;
-  margin-top: 40px;
+  padding-top: 40px;
   position: relative;
   z-index: 9; }
   @media (max-width: 980px) {
@@ -9,7 +7,10 @@ header {
       justify-content: space-between; } }
   @media (max-width: 767px) {
     header {
-      margin-top: 15px; } }
+      padding-top: 15px; } }
+  header .container {
+    display: flex;
+    align-items: center; }
   header .left-side {
     display: flex;
     align-items: center; }
@@ -24,13 +25,29 @@ header {
     width: 32px;
     height: auto;
     cursor: pointer;
-    margin-right: 52px; }
+    margin-right: 52px;
+    position: relative; }
+    header .burger img {
+      transition: opacity .1s;
+      opacity: 0; }
+      header .burger img.show {
+        opacity: 1; }
+    header .burger .burger-black {
+      position: absolute;
+      top: 0;
+      left: 0; }
     @media (max-width: 1365px) {
       header .burger {
         margin-right: 32px; } }
   header .logo {
     width: 171px;
-    margin-right: 56px; }
+    margin-right: 56px;
+    position: relative; }
+    header .logo img {
+      opacity: 0;
+      transition: opacity .1s; }
+      header .logo img.show {
+        opacity: 1; }
     @media (max-width: 1365px) {
       header .logo {
         margin-right: 16px;
@@ -42,6 +59,10 @@ header {
         justify-content: center; }
         header .logo img {
           width: 130px; } }
+    header .logo .logo-black {
+      position: absolute;
+      top: 0;
+      left: 0; }
   header .menu {
     flex: 1; }
     @media (max-width: 980px) {
@@ -63,7 +84,8 @@ header {
           line-height: 150%;
           letter-spacing: -0.02em;
           color: #ffffff;
-          text-decoration: none; }
+          text-decoration: none;
+          transition: color .1s; }
   header .phone a {
     font-weight: 600;
     font-size: 21px;
@@ -71,7 +93,8 @@ header {
     letter-spacing: -0.02em;
     margin-right: 56px;
     color: #ffffff;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: color .1s; }
     @media (max-width: 1365px) {
       header .phone a {
         margin-right: 32px;
@@ -96,7 +119,8 @@ header {
     color: #ffffff;
     text-align: center;
     margin-right: 16px;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all .1s; }
     @media (max-width: 767px) {
       header .consultation {
         display: none; } }
@@ -119,9 +143,10 @@ header {
       border: 1px solid #FFFFFF;
       box-sizing: border-box;
       border-radius: 50%;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all .1s; }
   header.black {
-    margin-bottom: 40px; }
+    padding-bottom: 40px; }
     header.black .menu ul li a {
       color: #333; }
     header.black .phone a {
@@ -132,3 +157,14 @@ header {
     header.black .language a {
       color: #333;
       border-color: #8d8d8d; }
+  header.scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: #fff;
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+    padding: 10px 0;
+    transition: padding .1s; }

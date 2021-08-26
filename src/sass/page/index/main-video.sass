@@ -1,9 +1,52 @@
+@keyframes marqueeLeft
+  0%
+    transform: translateX(100%)
+  100%
+    transform: translateX(-100%)
+@keyframes marqueeRight
+  0%
+    transform: translateX(-100%)
+  100%
+    transform: translateX(100%)
+
 section.main-video
   display: flex
   flex-direction: column
   margin-bottom: 136px
+  // fix
+  position: relative
+  // fix
   @media (max-width: 767px)
     margin-bottom: 60px
+  // fix
+  .texts
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    margin: auto
+    width: 100%
+    height: max-content
+    display: flex
+    flex-direction: column
+    p
+      font-family: "Druk Wide Cyr"
+      font-weight: 500
+      font-size: 72px
+      line-height: 150%
+      letter-spacing: -0.02em
+      text-transform: uppercase
+      color: #f3f3f3
+      margin: 0 0 105px
+      text-align: right
+      animation: marqueeLeft 10s linear infinite
+      &:last-child
+        text-align: left
+        margin-bottom: 0
+        animation: marqueeRight 10s linear infinite
+      @media (max-width: 767px)
+        display: none
+  // fix
   .container
     max-width: 1360px
     padding: 0

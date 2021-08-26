@@ -34,7 +34,8 @@ section.projects {
       border-radius: 61px;
       margin-right: 8px;
       margin-bottom: 8px;
-      text-decoration: none; }
+      text-decoration: none;
+      background: #fff; }
       @media (max-width: 767px) {
         section.projects .filters .filter {
           padding: 6px 12px;

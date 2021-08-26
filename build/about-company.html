@@ -10,32 +10,38 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="container">
-    <div class="left-side">
-        <div class="burger" data-popup="header-menu-popup">
-            <img src="img/svg/burger.svg" alt="">
+<header>
+<!--    fix -->
+    <div class="container">
+        <div class="left-side">
+            <div class="burger" data-popup="header-menu-popup">
+                <img src="img/svg/burger.svg" class="show" alt="">
+                <img src="img/svg/burger-black.svg" class="burger-black" alt="">
+            </div>
+            <a href="/" class="logo">
+                <img src="img/logo.png" class="show" alt="">
+                <img src="img/logo-colored.png" class="logo-black" alt="">
+            </a>
         </div>
-        <a href="/" class="logo">
-            <img src="img/logo.png" alt="">
-        </a>
-    </div>
-    <div class="menu">
-        <ul>
-            <li><a href="#">Проєкти</a></li>
-            <li><a href="#">Послуги</a></li>
-            <li><a href="#">Про компанiю</a></li>
-            <li><a href="#">Контакти</a></li>
-        </ul>
-    </div>
-    <div class="right-side">
-        <div class="phone">
-            <a href="tel:0442064506">(044) 206-45-06</a>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Проєкти</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Про компанiю</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
         </div>
-        <button class="consultation" data-popup="form-popup">Консультація</button>
-        <div class="language">
-            <a href="#">Ru</a>
+        <div class="right-side">
+            <div class="phone">
+                <a href="tel:0442064506">(044) 206-45-06</a>
+            </div>
+            <button class="consultation" data-popup="form-popup">Консультація</button>
+            <div class="language">
+                <a href="#">Ru</a>
+            </div>
         </div>
     </div>
+    <!--    fix -->
 </header>
 <main>
     <section class="top-block" style="background-image: url('img/top-block-bg1.png')">
@@ -263,6 +269,12 @@
     </div>
 </section>
     <section class="main-video">
+    <!--    fix -->
+    <div class="texts">
+        <p>Unisolar</p>
+        <p>Unisolar</p>
+    </div>
+    <!--    fix -->
     <div class="container">
         <div class="preview" style="background-image: url('img/video-preview.png')">
             <div class="play-btn"></div>

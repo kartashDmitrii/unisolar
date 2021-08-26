@@ -1,12 +1,48 @@
 html
   scroll-behavior: smooth
   overflow-x: hidden
+  //  fix
+  position: relative
+  &:before
+    content: ''
+    width: 1px
+    height: 100%
+    position: absolute
+    top: 0
+    left: 25%
+    background: #818181
+    z-index: -1
+    opacity: .1
+  &:after
+    content: ''
+    width: 1px
+    height: 100%
+    position: absolute
+    top: 0
+    right: 25%
+    background: #818181
+    z-index: -1
+    opacity: .1
+  //  fix
 body
   min-height: 100vh
   display: flex
   flex-direction: column
   font-family: "Proxima Nova"
   overflow: hidden
+  // fix
+  position: relative
+  &:before
+    content: ''
+    width: 1px
+    height: 100%
+    position: absolute
+    top: 0
+    left: calc(50% - 1px)
+    background: #818181
+    z-index: -1
+    opacity: .1
+  //  fix
   &.hidden
     max-height: 100vh
     overflow: hidden

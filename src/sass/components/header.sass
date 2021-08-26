@@ -1,13 +1,16 @@
 header
-  display: flex
-  align-items: center
-  margin-top: 40px
+  // fix
+  padding-top: 40px
+  // fix
   position: relative
   z-index: 9
   @media (max-width: 980px)
     justify-content: space-between
   @media (max-width: 767px)
-    margin-top: 15px
+    padding-top: 15px
+  .container
+    display: flex
+    align-items: center
   .left-side
     display: flex
     align-items: center
@@ -22,11 +25,30 @@ header
     height: auto
     cursor: pointer
     margin-right: 52px
+    //  fix
+    position: relative
+    img
+      transition: opacity .1s
+      opacity: 0
+      &.show
+        opacity: 1
+    .burger-black
+      position: absolute
+      top: 0
+      left: 0
     @media (max-width: 1365px)
       margin-right: 32px
   .logo
     width: 171px
     margin-right: 56px
+    //  fix
+    position: relative
+    img
+      opacity: 0
+      transition: opacity .1s
+      &.show
+        opacity: 1
+    //  fix
     @media (max-width: 1365px)
       margin-right: 16px
       width: 130px
@@ -36,6 +58,12 @@ header
       justify-content: center
       img
         width: 130px
+    //  fix
+    .logo-black
+      position: absolute
+      top: 0
+      left: 0
+    //  fix
   .menu
     flex: 1
     @media (max-width: 980px)
@@ -56,6 +84,9 @@ header
           letter-spacing: -0.02em
           color: #ffffff
           text-decoration: none
+          //  fix
+          transition: color .1s
+          //  fix
   .phone
     a
       font-weight: 600
@@ -65,6 +96,9 @@ header
       margin-right: 56px
       color: #ffffff
       text-decoration: none
+      //  fix
+      transition: color .1s
+      //  fix
       @media (max-width: 1365px)
         margin-right: 32px
         font-size: 16px
@@ -88,6 +122,9 @@ header
     text-align: center
     margin-right: 16px
     cursor: pointer
+    //  fix
+    transition: all .1s
+    //  fix
     @media (max-width: 767px)
       display: none
   .language
@@ -110,8 +147,13 @@ header
       box-sizing: border-box
       border-radius: 50%
       cursor: pointer
+      //  fix
+      transition: all .1s
+      //  fix
   &.black
-    margin-bottom: 40px
+    // fix
+    padding-bottom: 40px
+    // fix
     .menu
       ul
         li
@@ -127,3 +169,16 @@ header
       a
         color: #333
         border-color: #8d8d8d
+  //        fix
+  &.scroll
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 9
+    background: #fff
+    width: 100%
+    max-width: none
+    margin-top: 0
+    padding: 10px 0
+    transition: padding .1s
+  //        fix
